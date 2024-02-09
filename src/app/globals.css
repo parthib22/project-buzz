@@ -61,6 +61,7 @@ h2 {
 }
 
 p {
+  font-family: "Inter", sans-serif;
   font-style: italic;
   font-weight: 200;
   max-width: 500px;
@@ -69,7 +70,7 @@ button {
   background: linear-gradient(90deg, orangered, orange);
   /* background-color: #000; */
   color: #fff;
-  font-family: inherit;
+  /* font-family: inherit; */
   font-weight: 700;
   font-size: 24px;
   border: none;

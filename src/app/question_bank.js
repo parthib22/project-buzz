@@ -1,32 +1,31 @@
-// this file exports all the question data we need for the project
-// this is kind of a database to us
-// there are 6 categories array, each containing array of objects that is going to contain dataa about each question
-// I have created the basic boilerplate for u
-// your job is to name each category (ex: science, politics, etc), then fill that array with multiple objects containing different questions and corresponding option and answer.
-// copy the object below and paste it as many times as there should be questions for each category, then fill them up with questions.
-// optional fields are marked
-
-const Movie_Trivia = [
+const Movie = [
   // below is the one object i have created whose structure should be followed
   {
     id: 0, // optional
     question: "What color is Master Yoda’s lightsaber in the Star Wars films?",
-    options: ["Green", "Pink", "Red", "Blue"], 
+    options: ["Green", "Pink", "Red", "Blue"],
     correct: "Green",
     hint: "", // optional
     fact: "", // optional
   },
   {
     id: 1, // optional
-    question: "According to Yoda, the ultimate Jedi advice is “Do. Or do not. There is no try.” But which of the following statements were not uttered by the Jedi Master?",
-    options: ["“Judge me by my size, do you?”", "“That is why you win.”", "“A Jedi’s strength flows from the Force.”", "“That is why you win.”"],
+    question:
+      "According to Yoda, the ultimate Jedi advice is “Do. Or do not. There is no try.” But which of the following statements were not uttered by the Jedi Master?",
+    options: [
+      "“Judge me by my size, do you?”",
+      "“That is why you win.”",
+      "“A Jedi’s strength flows from the Force.”",
+      "“That is why you win.”",
+    ],
     correct: "“That is why you win.”",
     hint: "", // optional
     fact: "", // optional
-  }, 
+  },
   {
     id: 2, // optional
-    question: "Can you name the actor who plays Darth Vader in the Star Wars movies?",
+    question:
+      "Can you name the actor who plays Darth Vader in the Star Wars movies?",
     options: ["David Prowse", "Harrison Ford", "Oscar Isaac", "John Boyega"], // store options in an array
     correct: "David Prowse",
     hint: "", // optional
@@ -35,14 +34,20 @@ const Movie_Trivia = [
   {
     id: 3, // optional
     question: "Name the teen heartthrob who played the role of Cedric Diggory.",
-    options: ["Robert Pattinson", "Rupert Grint", "Daniel RadCliffe", "Tom Felton"], // store options in an array
+    options: [
+      "Robert Pattinson",
+      "Rupert Grint",
+      "Daniel RadCliffe",
+      "Tom Felton",
+    ], // store options in an array
     correct: "Robert Pattinson",
     hint: "", // optional
     fact: "", // optional
   },
   {
     id: 4, // optional
-    question: " Can you remember which spell causes the tip of a wand to light up?",
+    question:
+      " Can you remember which spell causes the tip of a wand to light up?",
     options: ["Lumos", "Nox", "Protego", "Imperio"], // store options in an array
     correct: "Lumos",
     hint: "Related to Light's Synonym", // optional
@@ -58,8 +63,14 @@ const Movie_Trivia = [
   },
   {
     id: 6, // optional
-    question: "Which type of dragon does Viktor Krum face in the first task of the Triwizard Tournament?",
-    options: ["Hungarian Horntail", " Chinese Fireball", "Swedish Short-Snout", "Common Welsh Green"], // store options in an array
+    question:
+      "Which type of dragon does Viktor Krum face in the first task of the Triwizard Tournament?",
+    options: [
+      "Hungarian Horntail",
+      " Chinese Fireball",
+      "Swedish Short-Snout",
+      "Common Welsh Green",
+    ], // store options in an array
     correct: "Chinese Fireball",
     hint: "", // optional
     fact: "The Hungarian Horntail is the most dangerous of the four dragons.", // optional
@@ -67,7 +78,12 @@ const Movie_Trivia = [
   {
     id: 7, // optional
     question: "Figure Out The Anagram: Herd Thresh Kit",
-    options: ["Monsters, Inc.", "The Incredible Hulk", "Shrek the Third", "The Green Mile"], // store options in an array
+    options: [
+      "Monsters, Inc.",
+      "The Incredible Hulk",
+      "Shrek the Third",
+      "The Green Mile",
+    ], // store options in an array
     correct: "Shrek the Third",
     hint: "The Third Green Monster", // optional
     fact: "", // optional
@@ -75,7 +91,12 @@ const Movie_Trivia = [
   {
     id: 8, // optional
     question: "Figure Out The Anagram: These Sex Hints",
-    options: ["The Sense of an Ending", "The Sixth Sense", "Senseless", "Sense and Sensibility"], // store options in an array
+    options: [
+      "The Sense of an Ending",
+      "The Sixth Sense",
+      "Senseless",
+      "Sense and Sensibility",
+    ], // store options in an array
     correct: "The Sixth Sense",
     hint: "Cole Sear", // optional
     fact: "", // optional
@@ -83,15 +104,26 @@ const Movie_Trivia = [
   {
     id: 9, // optional
     question: "Figure Out The Anagram: On One Male ",
-    options: ["Home Alone", "Kevin and Perry Go Large", "My Left Foot", "American Beauty"], // store options in an array
+    options: [
+      "Home Alone",
+      "Kevin and Perry Go Large",
+      "My Left Foot",
+      "American Beauty",
+    ], // store options in an array
     correct: "Home Alone",
     hint: "Kevin", // optional
     fact: "", // optional
   },
   {
     id: 10, // optional
-    question: "Which film series from the 2000s stars Tom Cruise as Ethan Hunt?",
-    options: ["James Bond: Casino Royale", "Mission: Impossible", "The Bourne Identity", "Die Hard: Mission Impossible"], // store options in an array
+    question:
+      "Which film series from the 2000s stars Tom Cruise as Ethan Hunt?",
+    options: [
+      "James Bond: Casino Royale",
+      "Mission: Impossible",
+      "The Bourne Identity",
+      "Die Hard: Mission Impossible",
+    ], // store options in an array
     correct: "Mission: Impossible",
     hint: "This film series features high-stakes espionage missions led by a skilled agent named Ethan Hunt.", // optional
     fact: "", // optional
@@ -106,31 +138,43 @@ const Movie_Trivia = [
   },
   {
     id: 12, // optional
-    question: "Which Disney movie starred Zac Efron as a high school basketball player?",
-    options: ["High School Musical", "Teen Beach Movie", "High School Musical 2", "High School Musical 3:"], // store options in an array
+    question:
+      "Which Disney movie starred Zac Efron as a high school basketball player?",
+    options: [
+      "High School Musical",
+      "Teen Beach Movie",
+      "High School Musical 2",
+      "High School Musical 3:",
+    ], // store options in an array
     correct: "High School Musical",
     hint: "This movie features a group of students who come together to perform in a musical", // optional
-    fact: "This movie launched Zac Efron's career as a teen heartthrob and features iconic songs like \"Breaking Free\" and \"We're All in This Together", // optional
+    fact: 'This movie launched Zac Efron\'s career as a teen heartthrob and features iconic songs like "Breaking Free" and "We\'re All in This Together', // optional
   },
   {
     id: 13, // optional
-    question: " Name the animated movie in which a rat becomes a professional chef with the help of a human.",
-    options: ["The Tale of Despereaux", "Flushed Away", "Stuart Little", "Ratatouille"], // store options in an array
+    question:
+      " Name the animated movie in which a rat becomes a professional chef with the help of a human.",
+    options: [
+      "The Tale of Despereaux",
+      "Flushed Away",
+      "Stuart Little",
+      "Ratatouille",
+    ], // store options in an array
     correct: "Ratatouille",
     hint: "This Pixar film is set in Paris and follows the culinary adventures of a rat named Remy", // optional
     fact: "", // optional
   },
   {
     id: 14, // optional
-    question: "In the animated film, The Jungle Book, who says, “The bare necessities of life will come to you”?",
+    question:
+      "In the animated film, The Jungle Book, who says, “The bare necessities of life will come to you”?",
     options: ["King Louie", "Bagheera", "Baloo", "Raksha"], // store options in an array
     correct: "Baloo",
-    hint: " This character sings the song \"The Bare Necessities,\" which features the famous line \"The bare necessities of life will come to you", // optional
+    hint: ' This character sings the song "The Bare Necessities," which features the famous line "The bare necessities of life will come to you', // optional
     fact: "", // optional
   },
 ];
-
-const Culinary_Conundrum = [
+const Food = [
   {
     id: 0, // optional
     question: "Can you Guess The Food Anagram:AS ANGEL (7)",
@@ -150,7 +194,12 @@ const Culinary_Conundrum = [
   {
     id: 2, // optional
     question: "Can you Guess The Food Anagram: HE TACKLE COCOA (9,4)",
-    options: ["Chocolate Mousse", "Chocolate Cake", "Tackled Choco", "Cocoa Latte"], // store options in an array
+    options: [
+      "Chocolate Mousse",
+      "Chocolate Cake",
+      "Tackled Choco",
+      "Cocoa Latte",
+    ], // store options in an array
     correct: "Chocolate Cake",
     hint: "A sweet baked dessert made with chocolate, flour, sugar, and eggs", // optional
     fact: "", // optional
@@ -173,7 +222,8 @@ const Culinary_Conundrum = [
   },
   {
     id: 5, // optional
-    question: "What was once used to cure diseases like the common cold and diarrhoea.",
+    question:
+      "What was once used to cure diseases like the common cold and diarrhoea.",
     options: ["Ketchup", "Mustard", "Vinegar", "Honey"], // store options in an array
     correct: "Ketchup",
     hint: "This condiment is commonly made from vinegar, sugar, and spices, and is often used as a topping or dipping sauce for various foods such as burgers, fries, and hot dogs.", // optional
@@ -229,7 +279,8 @@ const Culinary_Conundrum = [
   },
   {
     id: 12, // optional
-    question: "True or False: Oysters and Lobsters used to be the food of the working class.",
+    question:
+      "True or False: Oysters and Lobsters used to be the food of the working class.",
     options: ["Partially True", "False", "True", "Partially False"], // store options in an array
     correct: "True",
     hint: "", // optional
@@ -245,25 +296,33 @@ const Culinary_Conundrum = [
   },
   {
     id: 14, // optional
-    question: "True or False: Queensland, Australia produces 75% of the world’s pineapples.",
+    question:
+      "True or False: Queensland, Australia produces 75% of the world’s pineapples.",
     options: ["Partially True", "False", "True", "Partially False"], // store options in an array
     correct: "False",
     hint: "", // optional
     fact: "It’s Costa Rica", // optional
   },
 ];
-const Sports_Trivia = [
+const Sports = [
   {
     id: 0, // optional
-    question: "Founded by Bobby Jones and Clifford Roberts, which golf course was designed by Jones and Alister MacKenzie and opened for play in 1932?",
-    options: ["Augusta National Golf Club", "Pine Valley Golf Club", "Cypress Point Club", "Pebble Beach Golf Links."], // store options in an array
+    question:
+      "Founded by Bobby Jones and Clifford Roberts, which golf course was designed by Jones and Alister MacKenzie and opened for play in 1932?",
+    options: [
+      "Augusta National Golf Club",
+      "Pine Valley Golf Club",
+      "Cypress Point Club",
+      "Pebble Beach Golf Links.",
+    ], // store options in an array
     correct: "Augusta National Golf Club",
     hint: "This golf course is famous for hosting the annual Masters Tournament, one of the most prestigious events in professional golf.", // optional
     fact: "", // optional
   },
   {
     id: 1, // optional
-    question: " As mentioned on the USGA website, The Country Club in Atlantic City lay claim to the first use of which term that comes from the early 20th century American slang term meaning ‘anything excellent’?",
+    question:
+      " As mentioned on the USGA website, The Country Club in Atlantic City lay claim to the first use of which term that comes from the early 20th century American slang term meaning ‘anything excellent’?",
     options: ["Mulligan", "Handicap", "Birdie", "Bogey"], // store options in an array
     correct: "Birdie",
     hint: "", // optional
@@ -271,7 +330,8 @@ const Sports_Trivia = [
   },
   {
     id: 2, // optional
-    question: "A golfer on the PGA Tour carries how many golf clubs in their bag?",
+    question:
+      "A golfer on the PGA Tour carries how many golf clubs in their bag?",
     options: ["13", "14", "12", "15"], // store options in an array
     correct: "14",
     hint: "", // optional
@@ -287,7 +347,8 @@ const Sports_Trivia = [
   },
   {
     id: 4, // optional
-    question: "Which of the following dismissals is NOT a valid way to get out?",
+    question:
+      "Which of the following dismissals is NOT a valid way to get out?",
     options: ["Bailed", "Caught", "Run Out", "Bowled"], // store options in an array
     correct: "Bailed",
     hint: "", // optional
@@ -296,7 +357,12 @@ const Sports_Trivia = [
   {
     id: 5, // optional
     question: "What is a cricket ball made of?",
-    options: ["Rubber", "Leather", " Leather Outer/Cork Inner", "Leather Outer/Rubber Inner"], // store options in an array
+    options: [
+      "Rubber",
+      "Leather",
+      " Leather Outer/Cork Inner",
+      "Leather Outer/Rubber Inner",
+    ], // store options in an array
     correct: " Leather Outer/Cork Inner",
     hint: "", // optional
     fact: "", // optional
@@ -304,15 +370,26 @@ const Sports_Trivia = [
   {
     id: 6, // optional
     question: "Which of these cricket fielding positions are NOT real?",
-    options: ["Silly Short Leg.", "Silly Mid Off.", "Silly Point.", "Silly Mid On."], // store options in an array
+    options: [
+      "Silly Short Leg.",
+      "Silly Mid Off.",
+      "Silly Point.",
+      "Silly Mid On.",
+    ], // store options in an array
     correct: "Silly Short Leg.",
     hint: "", // optional
     fact: "", // optional
   },
   {
     id: 7, // optional
-    question: "Which countries team has had the lowest recorded test innings in history?",
-    options: ["India. (36 vs Australia in 2020)", "Australia. (36 vs England in 1902)", "South Africa. (30 vs England in 1924) ", " New Zealand. (26 vs England in 1955)"], // store options in an array
+    question:
+      "Which countries team has had the lowest recorded test innings in history?",
+    options: [
+      "India. (36 vs Australia in 2020)",
+      "Australia. (36 vs England in 1902)",
+      "South Africa. (30 vs England in 1924) ",
+      " New Zealand. (26 vs England in 1955)",
+    ], // store options in an array
     correct: " New Zealand. (26 vs England in 1955)",
     hint: "", // optional
     fact: "", // optional
@@ -344,7 +421,12 @@ const Sports_Trivia = [
   {
     id: 11, // optional
     question: "What does VAR stand for?",
-    options: ["Very Awful Referee", "Virtual Assistant Referee", "Vincent and Rupert", "Video Assisted Referee"], // store options in an array
+    options: [
+      "Very Awful Referee",
+      "Virtual Assistant Referee",
+      "Vincent and Rupert",
+      "Video Assisted Referee",
+    ], // store options in an array
     correct: "Video Assisted Referee",
     hint: "", // optional
     fact: "", // optional
@@ -374,7 +456,7 @@ const Sports_Trivia = [
     fact: "", // optional
   },
 ];
-const NatureandAnimals = [
+const Nature = [
   {
     id: 0, // optional
     question: "Which dog breeds were originally bred to fight badgers?",
@@ -386,7 +468,12 @@ const NatureandAnimals = [
   {
     id: 1, // optional
     question: "What is the largest dog breed in the world?",
-    options: ["Scottish Deerhound", "Great Pyrenees", " Greyhound", "English Mastiff"], // store options in an array
+    options: [
+      "Scottish Deerhound",
+      "Great Pyrenees",
+      " Greyhound",
+      "English Mastiff",
+    ], // store options in an array
     correct: "English Mastiff",
     hint: "", // optional
     fact: "", // optional
@@ -409,7 +496,8 @@ const NatureandAnimals = [
   },
   {
     id: 4, // optional
-    question: " When a copperhead is threatened, it emits a musk that smells vaguely like:",
+    question:
+      " When a copperhead is threatened, it emits a musk that smells vaguely like:",
     options: ["Cucumbers", "Orange", "Pineapple", "Mango"], // store options in an array
     correct: "Cucumbers",
     hint: "", // optional
@@ -418,7 +506,12 @@ const NatureandAnimals = [
   {
     id: 5, // optional
     question: "Which is the most venomous species of snake in the world?",
-    options: [" Egyptian Cobra", "Mozambique Spitting Cobra.", "King Cobra", " Inland Taipan"], // store options in an array
+    options: [
+      " Egyptian Cobra",
+      "Mozambique Spitting Cobra.",
+      "King Cobra",
+      " Inland Taipan",
+    ], // store options in an array
     correct: " Inland Taipan",
     hint: "", // optional
     fact: "", // optional
@@ -441,7 +534,8 @@ const NatureandAnimals = [
   },
   {
     id: 8, // optional
-    question: "When animals are the same size, which is stronger, a donkey or a horse?",
+    question:
+      "When animals are the same size, which is stronger, a donkey or a horse?",
     options: ["Donkey", "Horse", "Both will be same", "Mule"], // store options in an array
     correct: "Donkey",
     hint: "", // optional
@@ -449,7 +543,8 @@ const NatureandAnimals = [
   },
   {
     id: 9, // optional
-    question: "True or False: Coral (in coral reefs) are plants and not animals?",
+    question:
+      "True or False: Coral (in coral reefs) are plants and not animals?",
     options: ["Partially True", "False", "True", "Partially False"], // store options in an array
     correct: "Flse",
     hint: "", // optional
@@ -499,7 +594,8 @@ const NatureandAnimals = [
 const Spicy = [
   {
     id: 0, // optional
-    question: "What's the best part of your special one's body to lick honey from?",
+    question:
+      "What's the best part of your special one's body to lick honey from?",
     options: ["Fingertip", "Neck", "Collarbone", "Earlobe"], // store options in an array
     correct: "Fingertip",
     hint: "", // optional
@@ -507,7 +603,8 @@ const Spicy = [
   },
   {
     id: 1, // optional
-    question: "When I am big, a girl screams harder, and when I am smaller, she doesn't react. Guess what I am?",
+    question:
+      "When I am big, a girl screams harder, and when I am smaller, she doesn't react. Guess what I am?",
     options: ["Cockroach", "Ghost", "Shadow", "Ant"], // store options in an array
     correct: "Cockroach",
     hint: "", // optional
@@ -515,7 +612,8 @@ const Spicy = [
   },
   {
     id: 2, // optional
-    question: "I once allowed over a thousand men in before something long and rough ripped me open. Do you know who I am?",
+    question:
+      "I once allowed over a thousand men in before something long and rough ripped me open. Do you know who I am?",
     options: ["The Titanic", "Castle", "Prison", "Palace"], // store options in an array
     correct: "The Titanic",
     hint: "", // optional
@@ -523,15 +621,22 @@ const Spicy = [
   },
   {
     id: 3, // optional
-    question: "You put me in your mouth and have endless fun blowing me. What am I?",
-    options: ["Chewing Gum", "Gummy Bears", "Caramel Chocolates", "Jaw Breaker"], // store options in an array
+    question:
+      "You put me in your mouth and have endless fun blowing me. What am I?",
+    options: [
+      "Chewing Gum",
+      "Gummy Bears",
+      "Caramel Chocolates",
+      "Jaw Breaker",
+    ], // store options in an array
     correct: "Chewing Gum",
     hint: "", // optional
     fact: "Chewing Gums are fun to chew and have fun right?", // optional
   },
   {
     id: 4, // optional
-    question: "I'm stretched out before getting devoured. Your tongue irritates me. Occasionally, people lick my nuts. Who or what am I?",
+    question:
+      "I'm stretched out before getting devoured. Your tongue irritates me. Occasionally, people lick my nuts. Who or what am I?",
     options: ["Chewing Gum", "Peanut Butter", "Leather", "Kimchi"], // store options in an array
     correct: "Peanut Butter",
     hint: "", // optional
@@ -539,7 +644,8 @@ const Spicy = [
   },
   {
     id: 5, // optional
-    question: "When I enter, I have the potential to create discomfort. When you ask me to, I'll fill your gaps. Additionally, I request that you spit rather than swallow. Who or what am I?",
+    question:
+      "When I enter, I have the potential to create discomfort. When you ask me to, I'll fill your gaps. Additionally, I request that you spit rather than swallow. Who or what am I?",
     options: ["Dentist", "Parents", "Surgeon", "Relatives"], // store options in an array
     correct: "Dentist",
     hint: "", // optional
@@ -547,7 +653,8 @@ const Spicy = [
   },
   {
     id: 6, // optional
-    question: "I'm the focal point of many dates. I'm receptive when you insert your fingers deep inside me. Who or what am I?",
+    question:
+      "I'm the focal point of many dates. I'm receptive when you insert your fingers deep inside me. Who or what am I?",
     options: ["A Bowling Ball", "Pipes", "Cream Container", "Washing Machine"], // store options in an array
     correct: "A Bowling Ball",
     hint: "", // optional
@@ -555,7 +662,8 @@ const Spicy = [
   },
   {
     id: 7, // optional
-    question: "What is brittle and hairy on the exterior yet soft and moist on the inside? The word starts with 'c,' finishes with 't,' and contains both a 'u' and an 'n.'",
+    question:
+      "What is brittle and hairy on the exterior yet soft and moist on the inside? The word starts with 'c,' finishes with 't,' and contains both a 'u' and an 'n.'",
     options: ["Cachet", "Coconut", "Cadet", "Cadet"], // store options in an array
     correct: "Coconut",
     hint: "", // optional
@@ -563,7 +671,8 @@ const Spicy = [
   },
   {
     id: 8, // optional
-    question: "What four-letter word starts with the letter 'F and finishes with the letter 'k,' and if you're unable to get it, you can always use your hands?",
+    question:
+      "What four-letter word starts with the letter 'F and finishes with the letter 'k,' and if you're unable to get it, you can always use your hands?",
     options: ["Funk", "Fork", "Fusk", "Fisk"], // store options in an array
     correct: "Fork",
     hint: "", // optional
@@ -574,7 +683,7 @@ const Spicy = [
     question: " What's the best part of your body to put into a pie?",
     options: ["Face", "Finger", "Toe", "Teeth"], // store options in an array
     correct: "Teeth",
-    hint: "", // optional 
+    hint: "", // optional
     fact: "Like yeah what else?", // optional
   },
 ];
@@ -701,12 +810,11 @@ const Coding = [
   },
 ];
 
-// dont care about this portion, i'll explain later
 module.exports = {
-  category_1: category_1,
-  category_2: category_2,
-  category_3: category_3,
-  category_4: category_4,
-  category_5: category_5,
-  category_6: category_6,
+  Movie: Movie,
+  Food: Food,
+  Sports: Sports,
+  Nature: Nature,
+  Spicy: Spicy,
+  Coding: Coding,
 };

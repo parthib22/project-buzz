@@ -2,8 +2,9 @@
 import Image from "next/image";
 import React, { useState } from "react";
 export default function Home() {
-  const [data, setData] = useState<object>(require("./question_bank.js"));
-  console.log(data);
+  // const [category, setCategory] = useState("question");
+  // const [data, setData] = useState(require(`./${category}_bank.js`));
+  // console.log(data);
   return (
     <>
       <main>
