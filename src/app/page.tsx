@@ -1,24 +1,15 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
+import "./css/page.modules.css";
+
 export default function Home() {
-  // const [category, setCategory] = useState("question");
-  // const [data, setData] = useState(require(`./${category}_bank.js`));
-  // console.log(data);
   return (
     <>
-      <main>
-        <section>
-          <Image
-            src={
-              "https://images.unsplash.com/photo-1706905615690-91782b2d5491?q=80&w=1498&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            }
-            height={500}
-            width={387}
-            alt="image"
-          />
-        </section>
-        <section>
+      <main className="homeMain">
+        <section className="imageWrapper"></section>
+        <section className="textWrapper">
           <div>
             <h2>Project</h2>
             <h1> Buzz</h1>
@@ -30,7 +21,14 @@ export default function Home() {
             voluptatibus dolores ad fugiat iste deleniti architecto blanditiis
             quas tenetur est.
           </p>
-          <button>Start here</button>
+          <Link href="/Category">
+            <Image
+              height={200}
+              width={100}
+              src="/right_arrow.svg"
+              alt="arrow"
+            />
+          </Link>
         </section>
       </main>
     </>

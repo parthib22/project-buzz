@@ -1,7 +1,8 @@
 module.exports = [
+  // below is the one object i have created whose structure should be followed
   {
     id: 0, // optional
-    question: "What color is Master Yoda’s lightsaber in the Star Wars films?",
+    question: "What color is Master Yoda's lightsaber in the Star Wars films?",
     options: ["Green", "Pink", "Red", "Blue"],
     correct: "Green",
     hint: "", // optional
@@ -14,7 +15,7 @@ module.exports = [
     options: [
       "“Judge me by my size, do you?”",
       "“That is why you win.”",
-      "“A Jedi’s strength flows from the Force.”",
+      "“A Jedi's strength flows from the Force.”",
       "“That is why you win.”",
     ],
     correct: "“That is why you win.”",

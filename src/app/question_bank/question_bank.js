@@ -691,15 +691,26 @@ const Coding = [
   {
     id: 0, // optional
     question: "Who is the father of C language?",
-    options: ["Steve Jobs", "James Gosling", "Dennis Ritchie", "Rasmus Lerdorf"], // store options in an array
+    options: [
+      "Steve Jobs",
+      "James Gosling",
+      "Dennis Ritchie",
+      "Rasmus Lerdorf",
+    ], // store options in an array
     correct: "Dennis Ritchie",
     hint: "", // optional
     fact: "Dennis Ritchie is the father of C Programming Language. C programming language was developed in 1972 at American Telephone & Telegraph Bell Laboratories of USA.", // optional
   },
   {
     id: 1, // optional
-    question: "Which of the following declaration is not supported by C language?",
-    options: ["String str;", "char *str;", "float str = 3e2;", "Both “String str;” and “float str = 3e2;”"], // store options in an array
+    question:
+      "Which of the following declaration is not supported by C language?",
+    options: [
+      "String str;",
+      "char *str;",
+      "float str = 3e2;",
+      "Both “String str;” and “float str = 3e2;”",
+    ], // store options in an array
     correct: "String str;",
     hint: "", // optional
     fact: " It is legal in Java, but not in C language.", // optional
@@ -715,7 +726,12 @@ const Coding = [
   {
     id: 3, // optional
     question: "Who invented Java Programming?",
-    options: ["Steve Jobs", "James Gosling", "Dennis Ritchie", "Rasmus Lerdorf"], // store options in an array
+    options: [
+      "Steve Jobs",
+      "James Gosling",
+      "Dennis Ritchie",
+      "Rasmus Lerdorf",
+    ], // store options in an array
     correct: "James Gosling",
     hint: "", // optional
     fact: " Java programming was developed by James Gosling at Sun Microsystems in 1995. James Gosling is well known as the father of Java.", // optional
@@ -723,7 +739,12 @@ const Coding = [
   {
     id: 4, // optional
     question: " Which one of the following is not a Java feature?",
-    options: ["Object-oriented", " Use of pointers", "Portable", "Dynamic and Extensible"], // store options in an array
+    options: [
+      "Object-oriented",
+      " Use of pointers",
+      "Portable",
+      "Dynamic and Extensible",
+    ], // store options in an array
     correct: " Use of pointers",
     hint: "", // optional
     fact: "Pointers is not a Java feature. Java provides an efficient abstraction layer for developing without using a pointer in Java. Features of Java Programming are Portable, Architectural Neutral, Object-Oriented, Robust, Secure, Dynamic and Extensible, etc.", // optional
@@ -739,14 +760,20 @@ const Coding = [
   {
     id: 6, // optional
     question: "Which of the following is not javascript data types?",
-    options: ["Null type", "Undefined type", "Number type", " All of the mentioned"], // store options in an array
+    options: [
+      "Null type",
+      "Undefined type",
+      "Number type",
+      " All of the mentioned",
+    ], // store options in an array
     correct: " All of the mentioned",
     hint: "", // optional
     fact: " JavaScript is a dynamic, loosely typed language. Variables in JavaScript aren't tied to any specific value type, and each variable can be assigned and reassigned to values of all the types", // optional
   },
   {
     id: 7, // optional
-    question: "Which of the following object is the main entry point to all client-side JavaScript features and APIs?",
+    question:
+      "Which of the following object is the main entry point to all client-side JavaScript features and APIs?",
     options: ["Position", "Window", "Standard", "Location"], // store options in an array
     correct: "Window",
     hint: "", // optional
@@ -754,7 +781,8 @@ const Coding = [
   },
   {
     id: 8, // optional
-    question: "Which of the following can be used to call a JavaScript Code Snippet?",
+    question:
+      "Which of the following can be used to call a JavaScript Code Snippet?",
     options: ["Function/Method", "Preprocessor", "Triggering Event", "RMI"], // store options in an array
     correct: "Function/Method",
     hint: "", // optional
@@ -763,7 +791,12 @@ const Coding = [
   {
     id: 9, // optional
     question: "Who developed Python Programming Language?",
-    options: ["Wick van Rossum", "Rasmus Lerdorf", "Guido van Rossum", "Niene Stom"], // store options in an array
+    options: [
+      "Wick van Rossum",
+      "Rasmus Lerdorf",
+      "Guido van Rossum",
+      "Niene Stom",
+    ], // store options in an array
     correct: "Guido van Rossum",
     hint: "", // optional
     fact: "Python language is designed by a Dutch programmer Guido van Rossum in the Netherlands.", // optional
@@ -771,14 +804,20 @@ const Coding = [
   {
     id: 10, // optional
     question: "All keywords in Python are in _________",
-    options: ["Capitalized", "lower case", "UPPER CASE", "None of the mentioned"], // store options in an array
+    options: [
+      "Capitalized",
+      "lower case",
+      "UPPER CASE",
+      "None of the mentioned",
+    ], // store options in an array
     correct: "None of the mentioned",
     hint: "", // optional
     fact: "True, False and None are capitalized while the others are in lower case.", // optional
   },
   {
     id: 11, // optional
-    question: "Python supports the creation of anonymous functions at runtime, using a construct called __________",
+    question:
+      "Python supports the creation of anonymous functions at runtime, using a construct called __________",
     options: ["pi", "anonymous", "lambda", "none of the mentioned"], // store options in an array
     correct: "lambda",
     hint: "", // optional
@@ -795,7 +834,12 @@ const Coding = [
   {
     id: 13, // optional
     question: " What is the full form of PL in PL/SQL?",
-    options: ["Programming Language", "Programming Logic", "Procedural Language", "Procedural Logic"], // store options in an array
+    options: [
+      "Programming Language",
+      "Programming Logic",
+      "Procedural Language",
+      "Procedural Logic",
+    ], // store options in an array
     correct: "Procedural Language",
     hint: "", // optional
     fact: "PL in PL/SQL stands for Procedural Language. It is a block structured language that enables developers to combine the power of SQL with procedural language.", // optional

@@ -1,0 +1,76 @@
+/* Screen 1 */
+
+.homeMain {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.imageWrapper {
+  display: flex;
+  border-radius: 50px 0 0 50px;
+  mask: linear-gradient(90deg, black 80%, transparent);
+  height: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background-image: url("/home.jpg");
+  background-size: cover;
+  background-position: calc(50% + 1rem);
+}
+.imageWrapper img {
+  height: 100%;
+}
+
+.textWrapper {
+  z-index: 10;
+  margin-inline: -50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.textWrapper h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif !important;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 100px;
+}
+.textWrapper h2 {
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 100;
+}
+
+.textWrapper p {
+  font-style: italic;
+  font-weight: 200;
+  max-width: 500px;
+}
+.textWrapper a {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100px;
+}
+.textWrapper a img {
+  position: absolute;
+  color: orangered;
+  rotate: 90deg;
+  top: -50px;
+  left: 50px;
+  animation: motion 2s ease-out infinite alternate-reverse;
+}
+@keyframes motion {
+  0% {
+    transform: translateY(-0px);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
