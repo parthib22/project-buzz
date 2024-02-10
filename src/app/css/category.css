@@ -6,67 +6,79 @@
   align-items: center;
   justify-content: center;
 }
-.choiceMain h1 {
+.choiceWrapper {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.choiceWrapper h1 {
   margin: 0;
   font-family: "Playfair Display", serif !important;
   font-style: italic;
   font-weight: 700;
   font-size: 72px;
 }
-.choiceMain h2 {
+.choiceWrapper h2 {
   text-transform: uppercase;
   margin: 0;
   font-weight: 100;
 }
 
-.choiceMain p {
+.choiceWrapper p {
   font-style: italic;
   font-weight: 200;
   max-width: 500px;
 }
-.choiceWrapper {
-  display: flex;
-  /* grid-template: 150px / auto auto auto auto auto; */
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 10px 17px;
+.categoryWrapper {
+  display: grid;
+
+  grid-template-columns: repeat(3, 200px);
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 10px 15px;
   padding: 0;
-  margin: 50px;
+  /* margin: 50px; */
 }
 
-.choiceWrapper a {
+.categoryWrapper a {
   position: relative;
   /* list-style-type: none; */
   text-align: center;
 }
-.choiceWrapper a:hover > img,
-.choiceWrapper a:focus > img {
+.categoryWrapper a:hover > img,
+.categoryWrapper a:focus > img {
   filter: brightness(1);
 }
-.choiceWrapper a:hover > h2,
-.choiceWrapper a:focus > h2 {
+.categoryWrapper a:hover > h2,
+.categoryWrapper a:focus > h2 {
   /* filter: invert(0); */
   /* color: #fff; */
   /* text-shadow: 0 0 10px #000; */
   display: none;
 }
-.choiceWrapper a img {
+.categoryWrapper a img {
   position: relative;
-  filter: brightness(0.1);
-  border-radius: 20px;
+  filter: brightness(0.2);
+  border-radius: 10px;
 }
-.choiceWrapper a h2 {
-  height: 150px;
+.categoryWrapper a h2 {
+  height: 200px;
   aspect-ratio: auto 1/1;
-  line-height: 150px;
+  line-height: 200px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: transparent;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 900;
   text-align: center;
   background-clip: text;

@@ -3,6 +3,7 @@ import { useSearchParams } from "next/navigation";
 import React, { Suspense, useState } from "react";
 import "../css/quiz.css";
 import Link from "next/link";
+import Image from "next/image";
 function Page() {
   const searchParams = useSearchParams();
   const title = searchParams.get("title");
@@ -10,16 +11,15 @@ function Page() {
   return (
     <>
       <main className="quizMain">
-        <section>
-          <h1>{title}</h1>
-          <QuizComponent data={data} />
+        <section className="quizWrapper">
+          <QuizComponent title={title} data={data} />
         </section>
       </main>
     </>
   );
 }
 function QuizComponent(props: any) {
-  const { data } = props;
+  const { title, data } = props;
   console.log(data);
   const [index, setIndex] = useState(0);
   const [result, setResult] = useState(Array(data.length).fill(false));
@@ -32,36 +32,43 @@ function QuizComponent(props: any) {
   console.log(resultCount);
   return (
     <>
-      <p>{`${index + 1} / ${data.length}`}</p>
-      <h2>{data[index].question}</h2>
       <div>
-        {data[index].options.map((option: any, id: any) => (
-          <button
-            onClick={(e) =>
-              option == data[index].correct
-                ? setCheckCorrect(true)
-                : setCheckCorrect(false)
-            }
-            key={id}
-          >
-            {option}
-          </button>
-        ))}
+        <h1>{title}</h1>
       </div>
-      {/* <p>{}</p> */}
+      <div>
+        <p>{`${index + 1} of ${data.length}`}</p>
+        <h2>{data[index].question}</h2>
+        <div className="optionWrapper">
+          {data[index].options.map((option: any, id: any) => (
+            <button
+              onClick={(e) =>
+                option == data[index].correct
+                  ? setCheckCorrect(true)
+                  : setCheckCorrect(false)
+              }
+              key={id}
+            >
+              {option}
+            </button>
+          ))}
+        </div>
+      </div>
       <span
+        className="navBtnWrapper"
         onClick={() => {
           handleClick(index);
           console.log(result);
         }}
       >
         <button onClick={() => index > 0 && setIndex((prev) => prev - 1)}>
+          <Image src="/round_arrow.svg" height={50} width={50} alt="arrow" />
           {index == 0 ? (
             <Link href="/Category">Change Topic</Link>
           ) : (
-            <>Previous Question</>
+            <span>Previous Question</span>
           )}
         </button>
+        |
         <button
           onClick={() =>
             index < data.length - 1 && setIndex((prev) => prev + 1)
@@ -71,14 +78,15 @@ function QuizComponent(props: any) {
             <Link
               href={{
                 pathname: "/Result",
-                query: { result: resultCount },
+                query: { result: resultCount, full: data.length, topic: title },
               }}
             >
               Show Result
             </Link>
           ) : (
-            <>Next Question</>
+            <span>Next Question</span>
           )}
+          <Image src="/round_arrow.svg" height={50} width={50} alt="arrow" />
         </button>
       </span>
     </>
