@@ -2,7 +2,7 @@
 
 * {
   transition: all 0.2s ease;
-  box-shadow: inset 0 0 2px black;
+  /* box-shadow: inset 0 0 2px black; */
   font-family: "Inter", sans-serif;
 }
 

@@ -63,11 +63,12 @@ module.exports = [
   },
   {
     id: 7, // optional
-    question: "",
-    options: ["", "", "", ""], // store options in an array
-    correct: "",
+    question:
+      "True or False: Queensland, Australia produces 75% of the world's pineapples.",
+    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    correct: "False",
     hint: "", // optional
-    fact: "", // optional
+    fact: "It's Costa Rica", // optional
   },
   {
     id: 8, // optional
@@ -117,14 +118,5 @@ module.exports = [
     correct: "False",
     hint: "", // optional
     fact: "It was Coke, but only by 8 hours!", // optional
-  },
-  {
-    id: 14, // optional
-    question:
-      "True or False: Queensland, Australia produces 75% of the world's pineapples.",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
-    correct: "False",
-    hint: "", // optional
-    fact: "It's Costa Rica", // optional
   },
 ];

@@ -1,0 +1,15 @@
+/* SCREEN 3 */
+
+.quizMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.quizMain h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif !important;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 72px;
+}
