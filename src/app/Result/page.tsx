@@ -17,13 +17,13 @@ function Page() {
           heading: "You smashed it!",
           text: "Keep up the amazing work and see what challenges await you next.",
           action: "play another",
-          href: { pathname: "/Category" },
+          href: { pathname: "/category" },
         }
       : {
           heading: "Not quite there yet...",
           text: "Don't worry, everyone stumbles sometimes! Give it another shot.",
           action: "try again",
-          href: { pathname: "/Quiz", query: { title: topic } },
+          href: { pathname: "/quiz", query: { title: topic } },
         };
   return (
     <>

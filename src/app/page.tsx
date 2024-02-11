@@ -15,13 +15,14 @@ export default function Home() {
             <h1> Buzz</h1>
           </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-            voluptatum omnis doloribus obcaecati beatae illum qui pariatur
-            explicabo, consectetur exercitationem tempora commodi id laboriosam
-            voluptatibus dolores ad fugiat iste deleniti architecto blanditiis
-            quas tenetur est.
+            Sharpen your mind and embark on a thrilling trivia adventure with
+            Buzz! Explore a diverse library of challenging questions, spanning
+            every topic imaginable. Test your solo skills, push your limits, and
+            see just how much you know. Every answer reveals fascinating facts,
+            expanding your knowledge base with each game. No bells, no whistles,
+            just pure quizzing satisfaction!
           </p>
-          <Link href="/Category">
+          <Link href="/category">
             <Image
               height={200}
               width={100}

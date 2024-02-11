@@ -63,7 +63,7 @@ function QuizComponent(props: any) {
         <button onClick={() => index > 0 && setIndex((prev) => prev - 1)}>
           <Image src="/round_arrow.svg" height={50} width={50} alt="arrow" />
           {index == 0 ? (
-            <Link href="/Category">Change Topic</Link>
+            <Link href="/category">Change Topic</Link>
           ) : (
             <span>Previous Question</span>
           )}
@@ -77,7 +77,7 @@ function QuizComponent(props: any) {
           {index == data.length - 1 ? (
             <Link
               href={{
-                pathname: "/Result",
+                pathname: "/result",
                 query: { result: resultCount, full: data.length, topic: title },
               }}
             >

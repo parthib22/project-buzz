@@ -5,7 +5,7 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
-  background-color: rgb(255, 241, 214);
+  /* background-color: rgb(255, 241, 214); */
 }
 
 .imageWrapper {
@@ -70,14 +70,14 @@
   color: orangered;
   rotate: 90deg;
   top: -50px;
-  left: 50px;
+  right: 50px;
   animation: motion 1s ease-out infinite alternate-reverse;
 }
 @keyframes motion {
   0% {
-    transform: translateY(-0px);
+    transform: translateY(10px);
   }
   100% {
-    transform: translateY(-20%);
+    transform: translateY(0%);
   }
 }
