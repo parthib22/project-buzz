@@ -30,8 +30,9 @@
 .resultWrapper h1 {
   margin: 0;
   font-family: "Playfair Display", serif;
-  font-style: italic;
-  font-weight: 700;
+  /* font-style: italic; */
+  letter-spacing: -3px;
+  font-weight: 200;
   font-size: 72px;
 }
 .resultWrapper p {
@@ -48,10 +49,15 @@
   width: fit-content;
   font-size: 100px;
   font-weight: 600;
+  padding-left: 20px;
   background: linear-gradient(45deg, #ff9b9b, #ffcf96, #a1eebd, #7bd3ea);
   background-clip: text;
   color: transparent;
   filter: invert(1);
+}
+.scoreWrapper h2 p {
+  display: inline;
+  font-size: 24px;
 }
 .linkWrapper {
   display: flex;

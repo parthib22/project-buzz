@@ -11,6 +11,9 @@ export default function Category() {
     <>
       <main className="choiceMain">
         <section className="choiceWrapper">
+          <Link href="/" className="backBtn">
+            <Image src={"/round_arrow.svg"} height={30} width={30} alt="back" />
+          </Link>
           <div>
             <h1>Choose</h1>
             <span>-a topic to start the quiz</span>

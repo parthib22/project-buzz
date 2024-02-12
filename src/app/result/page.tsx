@@ -10,17 +10,22 @@ function Page() {
   // const full_marks = searchParams.get("full");
   const [result, full, topic]: any = searchParams.values();
   console.log(result);
-  const score = Number((result * 100) / full).toFixed(1);
+
+  const score =
+    (result * 100) % full > 0
+      ? Number((result * 100) / full).toFixed(1)
+      : Number((result * 100) / full).toFixed(0);
+
   const content =
     Number(score) > 50
       ? {
-          heading: "You smashed it!",
+          heading: "Well done. Congrats!",
           text: "Keep up the amazing work and see what challenges await you next.",
           action: "play another",
           href: { pathname: "/category" },
         }
       : {
-          heading: "Not quite there yet...",
+          heading: "Practice makes perfect!",
           text: "Don't worry, everyone stumbles sometimes! Give it another shot.",
           action: "try again",
           href: { pathname: "/quiz", query: { title: topic } },
@@ -38,7 +43,7 @@ function Page() {
             <p>You have scored</p>
             <h2>
               {score}
-              <p style={{ display: "inline", fontSize: 24 }}>{" %"}</p>
+              <p>{" %"}</p>
             </h2>
           </div>
           <p>{content.text}</p>

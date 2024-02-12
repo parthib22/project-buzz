@@ -65,7 +65,7 @@ function QuizComponent(props: any) {
           {index == 0 ? (
             <Link href="/category">Change Topic</Link>
           ) : (
-            <span>Previous Question</span>
+            <span>Previous</span>
           )}
         </button>
         |
@@ -84,7 +84,7 @@ function QuizComponent(props: any) {
               Show Result
             </Link>
           ) : (
-            <span>Next Question</span>
+            <span>Next</span>
           )}
           <Image src="/round_arrow.svg" height={50} width={50} alt="arrow" />
         </button>

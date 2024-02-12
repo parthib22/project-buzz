@@ -20,7 +20,7 @@ module.exports = [
       "String str;",
       "char *str;",
       "float str = 3e2;",
-      "Both “String str;” and “float str = 3e2;”",
+      "All of the above",
     ], // store options in an array
     correct: "String str;",
     hint: "", // optional
@@ -84,7 +84,7 @@ module.exports = [
   {
     id: 7, // optional
     question:
-      "Which of the following object is the main entry point to all client-side JavaScript features and APIs?",
+      "Which is the main entry point to all client-side JavaScript features and APIs?",
     options: ["Position", "Window", "Standard", "Location"], // store options in an array
     correct: "Window",
     hint: "", // optional
@@ -128,7 +128,7 @@ module.exports = [
   {
     id: 11, // optional
     question:
-      "Python supports the creation of anonymous functions at runtime, using a construct called __________",
+      "Python supports the creation of anonymous functions at runtime, using a construct called-?",
     options: ["pi", "anonymous", "lambda", "none of the mentioned"], // store options in an array
     correct: "lambda",
     hint: "", // optional

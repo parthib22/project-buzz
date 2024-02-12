@@ -1,27 +1,27 @@
 module.exports = [
-  {
-    id: 0, // optional
-    question:
-      "Founded by Bobby Jones and Clifford Roberts, which golf course was designed by Jones and Alister MacKenzie and opened for play in 1932?",
-    options: [
-      "Augusta National Golf Club",
-      "Pine Valley Golf Club",
-      "Cypress Point Club",
-      "Pebble Beach Golf Links.",
-    ], // store options in an array
-    correct: "Augusta National Golf Club",
-    hint: "This golf course is famous for hosting the annual Masters Tournament, one of the most prestigious events in professional golf.", // optional
-    fact: "", // optional
-  },
-  {
-    id: 1, // optional
-    question:
-      " As mentioned on the USGA website, The Country Club in Atlantic City lay claim to the first use of which term that comes from the early 20th century American slang term meaning 'anything excellent'?",
-    options: ["Mulligan", "Handicap", "Birdie", "Bogey"], // store options in an array
-    correct: "Birdie",
-    hint: "", // optional
-    fact: "", // optional
-  },
+  // {
+  //   id: 0, // optional
+  //   question:
+  //     "Founded by Bobby Jones and Clifford Roberts, which golf course was designed by Jones and Alister MacKenzie and opened for play in 1932?",
+  //   options: [
+  //     "Augusta National Golf Club",
+  //     "Pine Valley Golf Club",
+  //     "Cypress Point Club",
+  //     "Pebble Beach Golf Links.",
+  //   ], // store options in an array
+  //   correct: "Augusta National Golf Club",
+  //   hint: "This golf course is famous for hosting the annual Masters Tournament, one of the most prestigious events in professional golf.", // optional
+  //   fact: "", // optional
+  // },
+  // {
+  //   id: 1, // optional
+  //   question:
+  //     " As mentioned on the USGA website, The Country Club in Atlantic City lay claim to the first use of which term that comes from the early 20th century American slang term meaning 'anything excellent'?",
+  //   options: ["Mulligan", "Handicap", "Birdie", "Bogey"], // store options in an array
+  //   correct: "Birdie",
+  //   hint: "", // optional
+  //   fact: "", // optional
+  // },
   {
     id: 2, // optional
     question:

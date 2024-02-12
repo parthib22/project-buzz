@@ -5,14 +5,11 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
-  /* background-color: rgb(255, 241, 214); */
 }
 
 .imageWrapper {
-  display: flex;
-  border-radius: 50px 0 0 50px;
-  mask: linear-gradient(90deg, black 80%, transparent);
   height: 100%;
+  display: flex;
   aspect-ratio: 1/1;
   overflow: hidden;
   background-image: url("/home.jpg");
@@ -24,8 +21,8 @@
 }
 
 .textWrapper {
+  padding: 20px;
   z-index: 10;
-  margin-inline: -50px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -64,10 +61,13 @@
   cursor: pointer;
   width: 100%;
   height: 100px;
+  margin-top: -40px;
 }
 .textWrapper a img {
+  scale: 0.4;
+  object-fit: cover;
   position: absolute;
-  color: orangered;
+  /* color: orangered; */
   rotate: 90deg;
   top: -50px;
   right: 50px;
@@ -75,9 +75,43 @@
 }
 @keyframes motion {
   0% {
-    transform: translateY(10px);
+    transform: translateY(40px);
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+/* Large */
+@media only screen and (width >= 900px) {
+  .homeMain {
+    flex-direction: row;
+  }
+  .imageWrapper {
+    border-radius: 50px 0 0 50px;
+    mask: linear-gradient(90deg, black 80%, transparent);
+  }
+  .textWrapper {
+    margin-inline: -50px 20px;
+  }
+}
+@media only screen and (width >= 700px) and (width < 900px) {
+  .imageWrapper {
+    border-radius: 50px 50px 0 0;
+  }
+}
+
+/* Small */
+@media only screen and (width < 900px) {
+  .homeMain {
+    flex-direction: column;
+  }
+  .imageWrapper {
+    width: 100%;
+    /* border-radius: 0; */
+    mask: linear-gradient(black 80%, transparent);
+  }
+  .textWrapper {
+    margin-block: -50px 20px;
   }
 }

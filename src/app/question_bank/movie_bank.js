@@ -11,12 +11,12 @@ module.exports = [
   {
     id: 1, // optional
     question:
-      "According to Yoda, the ultimate Jedi advice is “Do. Or do not. There is no try.” But which of the following statements were not uttered by the Jedi Master?",
+      "Which of the following statements were not uttered by the Jedi Master, Yoda?",
     options: [
       "“Judge me by my size, do you?”",
       "“That is why you win.”",
       "“A Jedi's strength flows from the Force.”",
-      "“That is why you win.”",
+      "“Do. Or do not. There is no try.”",
     ],
     correct: "“That is why you win.”",
     hint: "", // optional
