@@ -18,7 +18,6 @@
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 72px;
 }
 .quizWrapper p {
   margin: 0;
@@ -27,7 +26,6 @@
 
 .quizWrapper h2 {
   margin: 0;
-  font-size: 40px;
   font-weight: 400;
   letter-spacing: -2px;
 }
@@ -126,6 +124,13 @@
   .quizWrapper .optionWrapper {
     grid-template-columns: calc(50% - 5px) calc(50% - 5px);
   }
+  .quizWrapper h1 {
+    font-size: 72px;
+    line-height: 64px;
+  }
+  .quizWrapper h2 {
+    font-size: 40px;
+  }
 }
 /* Small */
 @media only screen and (width < 700px) {
@@ -135,5 +140,12 @@
   }
   .quizWrapper .optionWrapper {
     grid-template-columns: 100%;
+  }
+  .quizWrapper h1 {
+    font-size: 32px;
+    line-height: 20px;
+  }
+  .quizWrapper h2 {
+    font-size: 36px;
   }
 }

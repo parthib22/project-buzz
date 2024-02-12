@@ -5,7 +5,7 @@ import "../css/category.css";
 import Link from "next/link";
 
 export default function Category() {
-  const category = ["movie", "food", "sports", "nature", "coding", "random"];
+  const category = ["movies", "food", "sports", "nature", "coding", "random"];
 
   return (
     <>
