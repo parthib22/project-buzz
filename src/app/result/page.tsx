@@ -1,15 +1,12 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
 import "../css/result.css";
 import { useSearchParams } from "next/navigation";
-import React, { Suspense, useState } from "react";
+import React, { Suspense } from "react";
 function Page() {
   const searchParams = useSearchParams();
-  // const result = searchParams.get("result");
-  // const full_marks = searchParams.get("full");
   const [result, full, topic]: any = searchParams.values();
-  console.log(result);
+  // console.log(result);
 
   const score =
     (result * 100) % full > 0

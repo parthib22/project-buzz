@@ -1,122 +1,122 @@
 module.exports = [
   {
-    id: 0, // optional
+    id: 0,
     question: "Can you Guess The Food Anagram:AS ANGEL (7)",
-    options: [" Lasagne", "Angelas", "Gelansa", "Lasagen"], // store options in an array
+    options: [" Lasagne", "Angelas", "Gelansa", "Lasagen"],
     correct: " Lasagne",
-    hint: "This Italian dish consists of layers of pasta, sauce, cheese, and other ingredients", // optional
-    fact: "", // optional
+    hint: "This Italian dish consists of layers of pasta, sauce, cheese, and other ingredients",
+    fact: "",
   },
   {
-    id: 1, // optional
+    id: 1,
     question: "Can you Guess The Food Anagram:RUSTLED (7)",
-    options: ["Trundle", "Lustred", "Strudel", "Slurred"], // store options in an array
+    options: ["Trundle", "Lustred", "Strudel", "Slurred"],
     correct: "Strudel",
-    hint: "A layered pastry with a sweet or savory filling, often associated with Austrian cuisine", // optional
-    fact: "", // optional
+    hint: "A layered pastry with a sweet or savory filling, often associated with Austrian cuisine",
+    fact: "",
   },
   {
-    id: 2, // optional
+    id: 2,
     question: "Can you Guess The Food Anagram: HE TACKLE COCOA (9,4)",
     options: [
       "Chocolate Mousse",
       "Chocolate Cake",
       "Tackled Choco",
       "Cocoa Latte",
-    ], // store options in an array
+    ],
     correct: "Chocolate Cake",
-    hint: "A sweet baked dessert made with chocolate, flour, sugar, and eggs", // optional
-    fact: "", // optional
+    hint: "A sweet baked dessert made with chocolate, flour, sugar, and eggs",
+    fact: "",
   },
   {
-    id: 3, // optional
+    id: 3,
     question: "Can you Guess The Food Anagram:AMOK AS US (8)",
-    options: ["Soak Maus", "Souma Kas", "Moussaka", "Amass You"], // store options in an array
+    options: ["Soak Maus", "Souma Kas", "Moussaka", "Amass You"],
     correct: "Moussaka",
-    hint: "A dish made with layers of eggplant, minced meat, and tomato sauce, topped with a creamy béchamel sauce", // optional
-    fact: "", // optional
+    hint: "A dish made with layers of eggplant, minced meat, and tomato sauce, topped with a creamy béchamel sauce",
+    fact: "",
   },
   {
-    id: 4, // optional
+    id: 4,
     question: "What is the most stolen food in the world?",
-    options: ["Cheese", "Bread", "Milk", "Chocolate"], // store options in an array
+    options: ["Cheese", "Bread", "Milk", "Chocolate"],
     correct: "Cheese",
-    hint: "Made by using milk.", // optional
-    fact: "", // optional
+    hint: "Made by using milk.",
+    fact: "",
   },
   {
-    id: 5, // optional
+    id: 5,
     question:
       "What was once used to cure diseases like the common cold and diarrhoea.",
-    options: ["Ketchup", "Mustard", "Vinegar", "Honey"], // store options in an array
+    options: ["Ketchup", "Mustard", "Vinegar", "Honey"],
     correct: "Ketchup",
-    hint: "This condiment is commonly made from vinegar, sugar, and spices, and is often used as a topping or dipping sauce for various foods such as burgers, fries, and hot dogs.", // optional
-    fact: "", // optional
+    hint: "This condiment is commonly made from vinegar, sugar, and spices, and is often used as a topping or dipping sauce for various foods such as burgers, fries, and hot dogs.",
+    fact: "",
   },
   {
-    id: 6, // optional
+    id: 6,
     question: "Which of the following foods can make you hallucinate?",
-    options: ["Nutmeg", "Chillies", "Rye Bread", "All of the Above"], // store options in an array
+    options: ["Nutmeg", "Chillies", "Rye Bread", "All of the Above"],
     correct: "All of the Above",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 7, // optional
+    id: 7,
     question:
       "True or False: Queensland, Australia produces 75% of the world's pineapples.",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    options: ["Partially True", "False", "True", "Partially False"],
     correct: "False",
-    hint: "", // optional
-    fact: "It's Costa Rica", // optional
+    hint: "",
+    fact: "It's Costa Rica",
   },
   {
-    id: 8, // optional
+    id: 8,
     question: "Where Did It Originate:Nasi Goreng",
-    options: ["Indonesia", "Bahrain", "Mexico", "Vietnam"], // store options in an array
+    options: ["Indonesia", "Bahrain", "Mexico", "Vietnam"],
     correct: "Indonesia",
-    hint: "South-East Asian Country", // optional
-    fact: "Fried rice dish, usually cooked with pieces of meat and vegetables", // optional
+    hint: "South-East Asian Country",
+    fact: "Fried rice dish, usually cooked with pieces of meat and vegetables",
   },
   {
-    id: 9, // optional
+    id: 9,
     question: "Where Did It Originate:Salteña",
-    options: ["France", "Bolivia", "Cuba", "Iceland"], // store options in an array
+    options: ["France", "Bolivia", "Cuba", "Iceland"],
     correct: "Bolivia",
-    hint: "", // optional
-    fact: "A baked empanada made with beef or chicken mixed with olives, potatoes, vegetables, hard-boiled egg, raisins, and spices in a sweet and slightly spicy sauce", // optional
+    hint: "",
+    fact: "A baked empanada made with beef or chicken mixed with olives, potatoes, vegetables, hard-boiled egg, raisins, and spices in a sweet and slightly spicy sauce",
   },
   {
-    id: 10, // optional
+    id: 10,
     question: "Where Did It Originate:Chicken Machboos",
-    options: ["Ghana", "France", "Bahrain", "Japan"], // store options in an array
+    options: ["Ghana", "France", "Bahrain", "Japan"],
     correct: "Bahrain",
-    hint: "", // optional
-    fact: " Spiced chicken and rice", // optional
+    hint: "",
+    fact: " Spiced chicken and rice",
   },
   {
-    id: 11, // optional
+    id: 11,
     question: "True or False: Apples belong to the rose family.",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    options: ["Partially True", "False", "True", "Partially False"],
     correct: "True",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 12, // optional
+    id: 12,
     question:
       "True or False: Oysters and Lobsters used to be the food of the working class.",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    options: ["Partially True", "False", "True", "Partially False"],
     correct: "True",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 13, // optional
+    id: 13,
     question: "True or False: Pepsi was the first soft drink drunk in space.",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    options: ["Partially True", "False", "True", "Partially False"],
     correct: "False",
-    hint: "", // optional
-    fact: "It was Coke, but only by 8 hours!", // optional
+    hint: "",
+    fact: "It was Coke, but only by 8 hours!",
   },
 ];

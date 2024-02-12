@@ -1,27 +1,27 @@
 module.exports = [
   {
-    id: 2, // optional
+    id: 2,
     question: " In C language, FILE is of which data type?",
-    options: ["int", "char*", "struct", "None of the above"], // store options in an array
+    options: ["int", "char*", "struct", "None of the above"],
     correct: "struct",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 3, // optional
+    id: 3,
     question: "Who invented Java Programming?",
     options: [
       "Steve Jobs",
       "James Gosling",
       "Dennis Ritchie",
       "Rasmus Lerdorf",
-    ], // store options in an array
+    ],
     correct: "James Gosling",
-    hint: "", // optional
-    fact: " Java programming was developed by James Gosling at Sun Microsystems in 1995. James Gosling is well known as the father of Java.", // optional
+    hint: "",
+    fact: " Java programming was developed by James Gosling at Sun Microsystems in 1995. James Gosling is well known as the father of Java.",
   },
   {
-    id: 6, // optional
+    id: 6,
     question:
       "Which type of dragon does Viktor Krum face in the first task of the Triwizard Tournament?",
     options: [
@@ -29,21 +29,21 @@ module.exports = [
       " Chinese Fireball",
       "Swedish Short-Snout",
       "Common Welsh Green",
-    ], // store options in an array
+    ],
     correct: "Chinese Fireball",
-    hint: "", // optional
-    fact: "The Hungarian Horntail is the most dangerous of the four dragons.", // optional
+    hint: "",
+    fact: "The Hungarian Horntail is the most dangerous of the four dragons.",
   },
   {
-    id: 8, // optional
+    id: 8,
     question: "Where Did It Originate:Nasi Goreng",
-    options: ["Indonesia", "Bahrain", "Mexico", "Vietnam"], // store options in an array
+    options: ["Indonesia", "Bahrain", "Mexico", "Vietnam"],
     correct: "Indonesia",
-    hint: "South-East Asian Country", // optional
-    fact: "Fried rice dish, usually cooked with pieces of meat and vegetables", // optional
+    hint: "South-East Asian Country",
+    fact: "Fried rice dish, usually cooked with pieces of meat and vegetables",
   },
   {
-    id: 10, // optional
+    id: 10,
     question:
       "Which film series from the 2000s stars Tom Cruise as Ethan Hunt?",
     options: [
@@ -51,223 +51,223 @@ module.exports = [
       "Mission: Impossible",
       "The Bourne Identity",
       "Die Hard: Mission Impossible",
-    ], // store options in an array
+    ],
     correct: "Mission: Impossible",
-    hint: "This film series features high-stakes espionage missions led by a skilled agent named Ethan Hunt.", // optional
-    fact: "", // optional
+    hint: "This film series features high-stakes espionage missions led by a skilled agent named Ethan Hunt.",
+    fact: "",
   },
   {
-    id: 11, // optional
+    id: 11,
     question: "Who played Sharkboy in Sharkboy and Lavagirl?",
-    options: ["Taylor Lautner", "Zac Efron", "Jake Gyllenhaal", "Shia LaBeouf"], // store options in an array
+    options: ["Taylor Lautner", "Zac Efron", "Jake Gyllenhaal", "Shia LaBeouf"],
     correct: "Taylor Lautner",
-    hint: "He's known for his role as a werewolf in another popular film series", // optional
-    fact: "", // optional
+    hint: "He's known for his role as a werewolf in another popular film series",
+    fact: "",
   },
   {
-    id: 3, // optional
+    id: 3,
     question: "Can you Guess The Food Anagram:AMOK AS US (8)",
-    options: ["Soak Maus", "Souma Kas", "Moussaka", "Amass You"], // store options in an array
+    options: ["Soak Maus", "Souma Kas", "Moussaka", "Amass You"],
     correct: "Moussaka",
-    hint: "A dish made with layers of eggplant, minced meat, and tomato sauce, topped with a creamy béchamel sauce", // optional
-    fact: "", // optional
+    hint: "A dish made with layers of eggplant, minced meat, and tomato sauce, topped with a creamy béchamel sauce",
+    fact: "",
   },
   {
-    id: 4, // optional
+    id: 4,
     question: "What is the most stolen food in the world?",
-    options: ["Cheese", "Bread", "Milk", "Chocolate"], // store options in an array
+    options: ["Cheese", "Bread", "Milk", "Chocolate"],
     correct: "Cheese",
-    hint: "Made by using milk.", // optional
-    fact: "", // optional
+    hint: "Made by using milk.",
+    fact: "",
   },
   {
-    id: 11, // optional
+    id: 11,
     question: "True or False: Apples belong to the rose family.",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    options: ["Partially True", "False", "True", "Partially False"],
     correct: "True",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 12, // optional
+    id: 12,
     question:
       "True or False: Oysters and Lobsters used to be the food of the working class.",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    options: ["Partially True", "False", "True", "Partially False"],
     correct: "True",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 2, // optional
+    id: 2,
     question:
       "Can you name the actor who plays Darth Vader in the Star Wars movies?",
-    options: ["David Prowse", "Harrison Ford", "Oscar Isaac", "John Boyega"], // store options in an array
+    options: ["David Prowse", "Harrison Ford", "Oscar Isaac", "John Boyega"],
     correct: "David Prowse",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 3, // optional
+    id: 3,
     question: "Name the teen heartthrob who played the role of Cedric Diggory.",
     options: [
       "Robert Pattinson",
       "Rupert Grint",
       "Daniel RadCliffe",
       "Tom Felton",
-    ], // store options in an array
+    ],
     correct: "Robert Pattinson",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 4, // optional
+    id: 4,
     question:
       "Which of the following dismissals is NOT a valid way to get out?",
-    options: ["Bailed", "Caught", "Run Out", "Bowled"], // store options in an array
+    options: ["Bailed", "Caught", "Run Out", "Bowled"],
     correct: "Bailed",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 5, // optional
+    id: 5,
     question: "What is a cricket ball made of?",
     options: [
       "Rubber",
       "Leather",
       " Leather Outer/Cork Inner",
       "Leather Outer/Rubber Inner",
-    ], // store options in an array
+    ],
     correct: " Leather Outer/Cork Inner",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 1, // optional
+    id: 1,
     question: "What is the largest dog breed in the world?",
     options: [
       "Scottish Deerhound",
       "Great Pyrenees",
       " Greyhound",
       "English Mastiff",
-    ], // store options in an array
+    ],
     correct: "English Mastiff",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 2, // optional
+    id: 2,
     question: "How many teeth do normal adult dogs have?",
-    options: ["42", "36", "44", "69"], // store options in an array
+    options: ["42", "36", "44", "69"],
     correct: "42",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 8, // optional
+    id: 8,
     question: "Where was England legend David Beckham born?",
-    options: ["Manchester", "Norwich", "London", "Carlisle"], // store options in an array
+    options: ["Manchester", "Norwich", "London", "Carlisle"],
     correct: "London",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 14, // optional
+    id: 14,
     question: "The SQL LIKE operator is used in which of the following clause?",
-    options: ["Having", "Select", "Where", "Group by"], // store options in an array
+    options: ["Having", "Select", "Where", "Group by"],
     correct: "Where",
-    hint: "", // optional
-    fact: "The SQL LIKE operator is used in a WHERE clause to search for a specified pattern in a column.", // optional
+    hint: "",
+    fact: "The SQL LIKE operator is used in a WHERE clause to search for a specified pattern in a column.",
   },
   {
-    id: 12, // optional
+    id: 12,
     question: "Guess The Anagrams:ENTIRE REGION",
-    options: ["Erogentirn", "Tonerigern", "Girenteron", "Orienteering"], // store options in an array
+    options: ["Erogentirn", "Tonerigern", "Girenteron", "Orienteering"],
     correct: "Orienteering",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 13, // optional
+    id: 13,
     question: "Guess The Anagrams:SNOUT BAIL",
-    options: [" Usain Bolt", "Justin Gatlin", "Allyson Felix", "Mo Farah"], // store options in an array
+    options: [" Usain Bolt", "Justin Gatlin", "Allyson Felix", "Mo Farah"],
     correct: " Usain Bolt",
-    hint: "Atheletics", // optional
-    fact: "", // optional
+    hint: "Atheletics",
+    fact: "",
   },
   {
-    id: 6, // optional
+    id: 6,
     question: "True or False: You can hypnotise a chicken?",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    options: ["Partially True", "False", "True", "Partially False"],
     correct: "True",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 9, // optional
+    id: 9,
     question:
       "True or False: Coral (in coral reefs) are plants and not animals?",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    options: ["Partially True", "False", "True", "Partially False"],
     correct: "Flse",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 10, // optional
+    id: 10,
     question: "Guess The Anagram: RAPTOR",
-    options: ["Parrot", "Raptor", "Trapor", "Raprot"], // store options in an array
+    options: ["Parrot", "Raptor", "Trapor", "Raprot"],
     correct: "Parrot",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 13, // optional
+    id: 13,
     question: "Guess The Anagrams: SOCCER IDOLS",
-    options: ["Crocodiles", "Crockodiles", "Socerlodes", "Idolcress"], // store options in an array
+    options: ["Crocodiles", "Crockodiles", "Socerlodes", "Idolcress"],
     correct: "Crocodiles",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 14, // optional
+    id: 14,
     question: "What is the name of the horse of Alexander the Great?",
-    options: ["Copenhagen", "Comanche", "Bucephalus", "Chaitak"], // store options in an array
+    options: ["Copenhagen", "Comanche", "Bucephalus", "Chaitak"],
     correct: "Bucephalus",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 6, // optional
+    id: 6,
     question: "Which of the following is not javascript data types?",
     options: [
       "Null type",
       "Undefined type",
       "Number type",
       " All of the mentioned",
-    ], // store options in an array
+    ],
     correct: " All of the mentioned",
-    hint: "", // optional
-    fact: " JavaScript is a dynamic, loosely typed language. Variables in JavaScript aren't tied to any specific value type, and each variable can be assigned and reassigned to values of all the types", // optional
+    hint: "",
+    fact: " JavaScript is a dynamic, loosely typed language. Variables in JavaScript aren't tied to any specific value type, and each variable can be assigned and reassigned to values of all the types",
   },
   {
-    id: 10, // optional
+    id: 10,
     question: "All keywords in Python are in _________",
     options: [
       "Capitalized",
       "lower case",
       "UPPER CASE",
       "None of the mentioned",
-    ], // store options in an array
+    ],
     correct: "None of the mentioned",
-    hint: "", // optional
-    fact: "True, False and None are capitalized while the others are in lower case.", // optional
+    hint: "",
+    fact: "True, False and None are capitalized while the others are in lower case.",
   },
   {
-    id: 11, // optional
+    id: 11,
     question:
       "Python supports the creation of anonymous functions at runtime, using a construct called __________",
-    options: ["pi", "anonymous", "lambda", "none of the mentioned"], // store options in an array
+    options: ["pi", "anonymous", "lambda", "none of the mentioned"],
     correct: "lambda",
-    hint: "", // optional
-    fact: "Python supports the creation of anonymous functions (i.e. functions that are not bound to a name) at runtime, using a construct called lambda. Lambda functions are restricted to a single expression. They can be used wherever normal functions can be used.", // optional
+    hint: "",
+    fact: "Python supports the creation of anonymous functions (i.e. functions that are not bound to a name) at runtime, using a construct called lambda. Lambda functions are restricted to a single expression. They can be used wherever normal functions can be used.",
   },
 ];

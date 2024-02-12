@@ -1,135 +1,135 @@
 module.exports = [
   {
-    id: 0, // optional
+    id: 0,
     question: "Which dog breeds were originally bred to fight badgers?",
-    options: ["Dachshunds", "Greyhounds", "Beagles", "Boxers"], // store options in an array
+    options: ["Dachshunds", "Greyhounds", "Beagles", "Boxers"],
     correct: "Dachshunds",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 1, // optional
+    id: 1,
     question: "What is the largest dog breed in the world?",
     options: [
       "Scottish Deerhound",
       "Great Pyrenees",
       " Greyhound",
       "English Mastiff",
-    ], // store options in an array
+    ],
     correct: "English Mastiff",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 2, // optional
+    id: 2,
     question: "How many teeth do normal adult dogs have?",
-    options: ["42", "36", "44", "69"], // store options in an array
+    options: ["42", "36", "44", "69"],
     correct: "42",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 3, // optional
+    id: 3,
     question: "Which snake has the longest fangs?",
-    options: ["Gaboon Viper", "Black Mamba", "Green anaconda", "Cottonmouths"], // store options in an array
+    options: ["Gaboon Viper", "Black Mamba", "Green anaconda", "Cottonmouths"],
     correct: "Gaboon Viper",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 4, // optional
+    id: 4,
     question:
       " When a copperhead is threatened, it emits a musk that smells vaguely like:",
-    options: ["Cucumbers", "Orange", "Pineapple", "Mango"], // store options in an array
+    options: ["Cucumbers", "Orange", "Pineapple", "Mango"],
     correct: "Cucumbers",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 5, // optional
+    id: 5,
     question: "Which is the most venomous species of snake in the world?",
     options: [
       " Egyptian Cobra",
       "Mozambique Spitting Cobra.",
       "King Cobra",
       " Inland Taipan",
-    ], // store options in an array
+    ],
     correct: " Inland Taipan",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 6, // optional
+    id: 6,
     question: "True or False: You can hypnotise a chicken?",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    options: ["Partially True", "False", "True", "Partially False"],
     correct: "True",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 7, // optional
+    id: 7,
     question: "True or False: An Ostrich's eye is bigger than its brain?",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    options: ["Partially True", "False", "True", "Partially False"],
     correct: "True",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 8, // optional
+    id: 8,
     question:
       "When animals are the same size, which is stronger, a donkey or a horse?",
-    options: ["Donkey", "Horse", "Both will be same", "Mule"], // store options in an array
+    options: ["Donkey", "Horse", "Both will be same", "Mule"],
     correct: "Donkey",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 9, // optional
+    id: 9,
     question:
       "True or False: Coral (in coral reefs) are plants and not animals?",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    options: ["Partially True", "False", "True", "Partially False"],
     correct: "Flse",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 10, // optional
+    id: 10,
     question: "Guess The Anagram: RAPTOR",
-    options: ["Parrot", "Raptor", "Trapor", "Raprot"], // store options in an array
+    options: ["Parrot", "Raptor", "Trapor", "Raprot"],
     correct: "Parrot",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 11, // optional
+    id: 11,
     question: "True or False: An octopus is an invertebrate?",
-    options: ["Partially True", "False", "True", "Partially False"], // store options in an array
+    options: ["Partially True", "False", "True", "Partially False"],
     correct: "True",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 12, // optional
+    id: 12,
     question: "What type of creature is a Pacific Sea Wasp?",
-    options: ["Jellyfish", "Octopus", "Sea urchin", "Stingray"], // store options in an array
+    options: ["Jellyfish", "Octopus", "Sea urchin", "Stingray"],
     correct: "Jellyfish",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 13, // optional
+    id: 13,
     question: "Guess The Anagrams: SOCCER IDOLS",
-    options: ["Crocodiles", "Crockodiles", "Socerlodes", "Idolcress"], // store options in an array
+    options: ["Crocodiles", "Crockodiles", "Socerlodes", "Idolcress"],
     correct: "Crocodiles",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 14, // optional
+    id: 14,
     question: "What is the name of the horse of Alexander the Great?",
-    options: ["Copenhagen", "Comanche", "Bucephalus", "Chaitak"], // store options in an array
+    options: ["Copenhagen", "Comanche", "Bucephalus", "Chaitak"],
     correct: "Bucephalus",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
 ];

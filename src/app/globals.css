@@ -25,8 +25,9 @@ main {
   background-color: rgb(255, 249, 238);
 }
 
-button {
-  cursor: pointer;
+button,
+a {
+  cursor: url("/buzz_icon.svg"), pointer;
 }
 /* Large */
 @media only screen and (width >= 700px) {

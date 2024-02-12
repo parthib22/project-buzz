@@ -1,6 +1,6 @@
 module.exports = [
   // {
-  //   id: 0, // optional
+  //   id: 0,
   //   question:
   //     "Founded by Bobby Jones and Clifford Roberts, which golf course was designed by Jones and Alister MacKenzie and opened for play in 1932?",
   //   options: [
@@ -8,74 +8,74 @@ module.exports = [
   //     "Pine Valley Golf Club",
   //     "Cypress Point Club",
   //     "Pebble Beach Golf Links.",
-  //   ], // store options in an array
+  //   ],
   //   correct: "Augusta National Golf Club",
-  //   hint: "This golf course is famous for hosting the annual Masters Tournament, one of the most prestigious events in professional golf.", // optional
-  //   fact: "", // optional
+  //   hint: "This golf course is famous for hosting the annual Masters Tournament, one of the most prestigious events in professional golf.",
+  //   fact: "",
   // },
   // {
-  //   id: 1, // optional
+  //   id: 1,
   //   question:
   //     " As mentioned on the USGA website, The Country Club in Atlantic City lay claim to the first use of which term that comes from the early 20th century American slang term meaning 'anything excellent'?",
-  //   options: ["Mulligan", "Handicap", "Birdie", "Bogey"], // store options in an array
+  //   options: ["Mulligan", "Handicap", "Birdie", "Bogey"],
   //   correct: "Birdie",
-  //   hint: "", // optional
-  //   fact: "", // optional
+  //   hint: "",
+  //   fact: "",
   // },
   {
-    id: 2, // optional
+    id: 2,
     question:
       "A golfer on the PGA Tour carries how many golf clubs in their bag?",
-    options: ["13", "14", "12", "15"], // store options in an array
+    options: ["13", "14", "12", "15"],
     correct: "14",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 3, // optional
+    id: 3,
     question: "Which well-known golfer is nicknamed 'El Nino'?",
-    options: ["Sergio Garcia", "Bobby Locke", "Seve Ballesteros", "Ernie Els"], // store options in an array
+    options: ["Sergio Garcia", "Bobby Locke", "Seve Ballesteros", "Ernie Els"],
     correct: "Sergio Garcia",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 4, // optional
+    id: 4,
     question:
       "Which of the following dismissals is NOT a valid way to get out?",
-    options: ["Bailed", "Caught", "Run Out", "Bowled"], // store options in an array
+    options: ["Bailed", "Caught", "Run Out", "Bowled"],
     correct: "Bailed",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 5, // optional
+    id: 5,
     question: "What is a cricket ball made of?",
     options: [
       "Rubber",
       "Leather",
       " Leather Outer/Cork Inner",
       "Leather Outer/Rubber Inner",
-    ], // store options in an array
+    ],
     correct: " Leather Outer/Cork Inner",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 6, // optional
+    id: 6,
     question: "Which of these cricket fielding positions are NOT real?",
     options: [
       "Silly Short Leg.",
       "Silly Mid Off.",
       "Silly Point.",
       "Silly Mid On.",
-    ], // store options in an array
+    ],
     correct: "Silly Short Leg.",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 7, // optional
+    id: 7,
     question:
       "Which countries team has had the lowest recorded test innings in history?",
     options: [
@@ -83,70 +83,70 @@ module.exports = [
       "Australia. (36 vs England in 1902)",
       "South Africa. (30 vs England in 1924) ",
       " New Zealand. (26 vs England in 1955)",
-    ], // store options in an array
+    ],
     correct: " New Zealand. (26 vs England in 1955)",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 8, // optional
+    id: 8,
     question: "Where was England legend David Beckham born?",
-    options: ["Manchester", "Norwich", "London", "Carlisle"], // store options in an array
+    options: ["Manchester", "Norwich", "London", "Carlisle"],
     correct: "London",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 9, // optional
+    id: 9,
     question: "Which English Premier side are known as The Red Devils?",
-    options: ["Arsenal", "Newcastle United", "Manchester United", "Chelsea"], // store options in an array
+    options: ["Arsenal", "Newcastle United", "Manchester United", "Chelsea"],
     correct: "Manchester United",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 10, // optional
+    id: 10,
     question: "Which club won the Scottish Premiership in 2022-23?",
-    options: ["Rangers", "Celtic", "Motherwell", "Kilmarnock"], // store options in an array
+    options: ["Rangers", "Celtic", "Motherwell", "Kilmarnock"],
     correct: "Celtic",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 11, // optional
+    id: 11,
     question: "What does VAR stand for?",
     options: [
       "Very Awful Referee",
       "Virtual Assistant Referee",
       "Vincent and Rupert",
       "Video Assisted Referee",
-    ], // store options in an array
+    ],
     correct: "Video Assisted Referee",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 12, // optional
+    id: 12,
     question: "Guess The Anagrams:ENTIRE REGION",
-    options: ["Erogentirn", "Tonerigern", "Girenteron", "Orienteering"], // store options in an array
+    options: ["Erogentirn", "Tonerigern", "Girenteron", "Orienteering"],
     correct: "Orienteering",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
   {
-    id: 13, // optional
+    id: 13,
     question: "Guess The Anagrams:SNOUT BAIL",
-    options: [" Usain Bolt", "Justin Gatlin", "Allyson Felix", "Mo Farah"], // store options in an array
+    options: [" Usain Bolt", "Justin Gatlin", "Allyson Felix", "Mo Farah"],
     correct: " Usain Bolt",
-    hint: "Atheletics", // optional
-    fact: "", // optional
+    hint: "Atheletics",
+    fact: "",
   },
   {
-    id: 14, // optional
+    id: 14,
     question: "Guess The Anagrams:LOVELY BALL",
-    options: ["Lleyvolab", "Volleyball", "Yallvobell", "Voblyalle"], // store options in an array
+    options: ["Lleyvolab", "Volleyball", "Yallvobell", "Voblyalle"],
     correct: "Volleyball",
-    hint: "", // optional
-    fact: "", // optional
+    hint: "",
+    fact: "",
   },
 ];

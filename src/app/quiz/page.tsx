@@ -20,16 +20,16 @@ function Page() {
 }
 function QuizComponent(props: any) {
   const { title, data } = props;
-  console.log(data);
+  // console.log(data);
   const [index, setIndex] = useState(0);
   const [result, setResult] = useState(Array(data.length).fill(false));
   const [checkCorrect, setCheckCorrect] = useState<boolean>(false);
   const handleClick = (index: any) => {
     setResult((prev) => ({ ...prev, [index]: checkCorrect }));
   };
-  console.log(typeof result);
+  // console.log(typeof result);
   const resultCount = Object.values(result).filter((x) => x === true).length;
-  console.log(resultCount);
+  // console.log(resultCount);
   return (
     <>
       <div>
