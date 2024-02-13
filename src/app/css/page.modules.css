@@ -8,7 +8,7 @@
 }
 
 .imageWrapper {
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   /* aspect-ratio: 1/1; */
   overflow: hidden;
@@ -59,28 +59,36 @@
   position: relative;
   border: none;
   cursor: pointer;
-  width: 100%;
-  height: 100px;
-  margin-top: -40px;
+  /* text */
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
-.textWrapper a img {
+
+/* .textWrapper a img {
   scale: 0.4;
   object-fit: cover;
   position: absolute;
-  /* color: orangered; */
   rotate: 90deg;
-  top: -50px;
+  top: -75px;
   right: 50px;
   animation: motion 1s ease-out infinite alternate-reverse;
-}
-@keyframes motion {
+} */
+/* @keyframes motion {
   0% {
     transform: translateY(40px);
   }
   100% {
     transform: translateY(0%);
   }
-}
+} */
 
 /* Large */
 @media only screen and (width >= 900px) {
@@ -88,12 +96,26 @@
     flex-direction: row;
   }
   .imageWrapper {
+    height: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 50px 0 0 50px;
     mask: linear-gradient(90deg, black 80%, transparent);
   }
   .textWrapper {
     margin-inline: -50px 20px;
+  }
+  .textWrapper a {
+    width: 50%;
+    height: 70px;
+    margin-inline: 10px;
+    background: transparent;
+    border: 1px solid #000;
+    filter: invert(0);
+    transition: all 0.5s ease;
+  }
+  .textWrapper a:hover {
+    background: linear-gradient(45deg, #ff9b9b, #ffcf96, #a1eebd, #7bd3ea);
+    filter: invert(1);
   }
 }
 @media only screen and (width >= 700px) and (width < 900px) {
@@ -108,13 +130,21 @@
     flex-direction: column;
   }
   .imageWrapper {
-    width: 100%;
-    min-height: 90vw;
-    max-height: 50%;
-    /* border-radius: 0; */
+    min-width: 100%;
+    min-height: 50%;
+    height: 50% !important;
+    aspect-ratio: 2/3;
     mask: linear-gradient(black 80%, transparent);
   }
   .textWrapper {
     margin-block: -50px 20px;
+  }
+  .textWrapper a {
+    width: 99%;
+    margin-inline: auto;
+    height: 50px;
+    margin-top: -20px;
+    background: linear-gradient(45deg, #ff9b9b, #ffcf96, #a1eebd, #7bd3ea);
+    filter: invert(1);
   }
 }
