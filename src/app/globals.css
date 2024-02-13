@@ -31,11 +31,11 @@ a {
 /* Large */
 @media only screen and (width >= 700px) {
   body {
-    min-height: 100svh;
+    min-height: 100vh;
     background-color: #aaa;
   }
   main {
-    height: 90svh;
+    height: 90vh;
     width: 90vw;
     border-radius: 50px;
   }
@@ -43,13 +43,13 @@ a {
 /* Small */
 @media only screen and (width < 700px) {
   body {
-    min-height: 100svh;
+    min-height: 100vh;
     height: 100%;
     background-color: rgb(255, 249, 238);
   }
   main {
     height: 100%;
-    min-height: 100svh;
+    min-height: 100vh;
     width: 100%;
   }
 }
