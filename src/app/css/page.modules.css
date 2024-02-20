@@ -12,7 +12,7 @@
   display: flex;
   /* aspect-ratio: 1/1; */
   overflow: hidden;
-  background-image: url("/home.jpg");
+  background-image: url("/home.avif");
   background-size: cover;
   background-position: calc(50% + 1rem);
 }
