@@ -36,16 +36,41 @@
   font-style: italic;
   font-weight: 700;
   font-size: 120px;
-  line-height: 100px;
+  line-height: 105px;
+  padding-inline: 7px;
+  color: #ffffff00;
+  background: linear-gradient(45deg, #ff9b9b, #ffcf96, #a1eebd, #7bd3ea);
+  background-size: 200% 100%;
+  background-position: 0 0;
+  background-clip: text;
+  filter: invert(1);
+  /* border: 1px solid #fff; */
+  animation: animate-gradient 5s ease-in-out infinite alternate-reverse;
+}
+@keyframes animate-gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 .textWrapper h2 {
   /* font-family: "Playfair Display", serif; */
   /* font-style: italic; */
   text-transform: lowercase;
   margin: 0;
-  font-weight: 500;
-  text-align: end;
-  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  width: auto;
+  color: #000000aa;
+  letter-spacing: 1px;
+  /* background-color: #000; */
+  float: right;
+  padding: 3px;
+  font-size: 10px;
+  border: 1px solid currentColor;
+  border-radius: 5px;
   margin-bottom: -24px;
   /* letter-spacing: 2px; */
 }

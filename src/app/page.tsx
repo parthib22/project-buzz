@@ -11,7 +11,7 @@ export default function Home() {
         <section className="imageWrapper"></section>
         <section className="textWrapper">
           <div>
-            <h2>Project</h2>
+            <h2>alpha</h2>
             <h1> Buzz</h1>
           </div>
           <p>
