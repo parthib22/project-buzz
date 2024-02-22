@@ -41,7 +41,10 @@ function QuizComponent(props: any) {
   };
   return (
     <>
-      <div>
+      <div className="backWrapper">
+        <Link href="/category" className="backBtn">
+          <Image src={"/round_arrow.svg"} height={30} width={30} alt="back" />
+        </Link>
         <h1>{topic}</h1>
       </div>
       <div>
@@ -107,7 +110,7 @@ function QuizComponent(props: any) {
 }
 export default function Quiz() {
   return (
-    <Suspense fallback={<h1>Loading...</h1>}>
+    <Suspense fallback={<div className="loaderContainer"></div>}>
       <Page />
     </Suspense>
   );

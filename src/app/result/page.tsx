@@ -59,7 +59,7 @@ function Page() {
 }
 export default function Result() {
   return (
-    <Suspense fallback={<h2>Loading...</h2>}>
+    <Suspense fallback={<div className="loaderContainer"></div>}>
       <Page />
     </Suspense>
   );

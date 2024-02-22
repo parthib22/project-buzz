@@ -25,13 +25,6 @@ export default function Category() {
                 href={{ pathname: "/quiz", query: { topic: item } }}
               >
                 {item}
-                {/* <Image src={`/${item}.jpg`} height={200} width={200} alt="" />
-                <h2
-                  style={{
-                    backgroundImage: `url("/${item}.jpg")`,
-                    backgroundSize: "cover",
-                  }}
-                ></h2> */}
               </Link>
             ))}
           </span>

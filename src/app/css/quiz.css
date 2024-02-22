@@ -13,6 +13,17 @@
   justify-content: space-between;
   gap: 10px;
 }
+.quizWrapper .backWrapper {
+  display: flex;
+  gap: 10px;
+}
+.quizWrapper .backBtn {
+  display: grid;
+  place-items: center;
+}
+.quizWrapper .backBtn img {
+  rotate: 180deg;
+}
 .quizWrapper h1 {
   margin: 0;
   font-family: "Playfair Display", serif;
@@ -128,6 +139,9 @@
     font-size: 72px;
     line-height: 64px;
   }
+  .quizWrapper .backBtn img {
+    scale: 1;
+  }
   .quizWrapper h2 {
     font-size: 40px;
   }
@@ -144,6 +158,9 @@
   .quizWrapper h1 {
     font-size: 32px;
     line-height: 20px;
+  }
+  .quizWrapper .backBtn img {
+    scale: 0.8;
   }
   .quizWrapper h2 {
     font-size: 36px;

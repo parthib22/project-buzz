@@ -116,7 +116,7 @@
 } */
 
 /* Large */
-@media only screen and (width >= 900px) {
+@media only screen and (width >= 700px) {
   .homeMain {
     flex-direction: row;
   }
@@ -143,14 +143,9 @@
     filter: invert(1);
   }
 }
-@media only screen and (width >= 700px) and (width < 900px) {
-  .imageWrapper {
-    border-radius: 50px 50px 0 0;
-  }
-}
 
 /* Small */
-@media only screen and (width < 900px) {
+@media only screen and (width < 700px) {
   .homeMain {
     flex-direction: column;
   }
@@ -158,6 +153,8 @@
     min-width: 100%;
     min-height: 50%;
     height: 50% !important;
+    border-radius: 0;
+
     aspect-ratio: 2/3;
     mask: linear-gradient(black 80%, transparent);
   }
