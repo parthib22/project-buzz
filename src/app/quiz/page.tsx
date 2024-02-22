@@ -4,22 +4,24 @@ import React, { Suspense, useState } from "react";
 import "../css/quiz.css";
 import Link from "next/link";
 import Image from "next/image";
+import AES from "crypto-js/aes";
+
 function Page() {
   const searchParams = useSearchParams();
-  const title = searchParams.get("title");
-  const data = require(`../question_bank/${title?.toLowerCase()}_bank.js`);
+  const topic = searchParams.get("topic");
+  const data = require(`../question_bank/${topic?.toLowerCase()}_bank.js`);
   return (
     <>
       <main className="quizMain">
         <section className="quizWrapper">
-          <QuizComponent title={title} data={data} />
+          <QuizComponent topic={topic} data={data} />
         </section>
       </main>
     </>
   );
 }
 function QuizComponent(props: any) {
-  const { title, data } = props;
+  const { topic, data } = props;
   // console.log(data);
   const [index, setIndex] = useState(0);
   const [result, setResult] = useState(Array(data.length).fill(false));
@@ -30,10 +32,17 @@ function QuizComponent(props: any) {
   // console.log(typeof result);
   const resultCount = Object.values(result).filter((x) => x === true).length;
   // console.log(resultCount);
+  const encryptResult = (value: number) => {
+    const stringValue = JSON.stringify((value * 100) / data.length);
+    return AES.encrypt(
+      stringValue,
+      process.env.ENCRYPTION_KEY || ""
+    ).toString();
+  };
   return (
     <>
       <div>
-        <h1>{title}</h1>
+        <h1>{topic}</h1>
       </div>
       <div>
         <p>{`${index + 1} of ${data.length}`}</p>
@@ -78,7 +87,11 @@ function QuizComponent(props: any) {
             <Link
               href={{
                 pathname: "/result",
-                query: { result: resultCount, full: data.length, topic: title },
+                query: {
+                  id: encryptResult(resultCount),
+                  // full: data.length,
+                  topic: topic,
+                },
               }}
             >
               Show Result

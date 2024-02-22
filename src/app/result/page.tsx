@@ -3,18 +3,22 @@ import Link from "next/link";
 import "../css/result.css";
 import { useSearchParams } from "next/navigation";
 import React, { Suspense } from "react";
+import AES from "crypto-js/aes";
+import Utf8 from "crypto-js/enc-utf8";
 function Page() {
   const searchParams = useSearchParams();
-  const [result, full, topic]: any = searchParams.values();
+  const [id, topic]: any = searchParams.values();
   // console.log(result);
 
-  const score =
-    (result * 100) % full > 0
-      ? Number((result * 100) / full).toFixed(1)
-      : Number((result * 100) / full).toFixed(0);
+  const decryptValue = (stringValue: string) => {
+    const value = Number(
+      AES.decrypt(stringValue, process.env.ENCRYPTION_KEY || "").toString(Utf8)
+    );
+    return value % 10 > 0 ? value.toFixed(1) : value.toFixed(0);
+  };
 
   const content =
-    Number(score) > 50
+    Number(decryptValue(id)) > 50
       ? {
           heading: "Well done. Congrats!",
           text: "Keep up the amazing work and see what challenges await you next.",
@@ -25,7 +29,7 @@ function Page() {
           heading: "Practice makes perfect!",
           text: "Don't worry, everyone stumbles sometimes! Give it another shot.",
           action: "try again",
-          href: { pathname: "/quiz", query: { title: topic } },
+          href: { pathname: "/quiz", query: { topic: topic } },
         };
   return (
     <>
@@ -39,7 +43,7 @@ function Page() {
           <div className="scoreWrapper">
             <p>You have scored</p>
             <h2>
-              {score}
+              {decryptValue(id)}
               <p>{" %"}</p>
             </h2>
           </div>

@@ -22,7 +22,7 @@ export default function Category() {
             {category.map((item, id) => (
               <Link
                 key={id}
-                href={{ pathname: "/quiz", query: { title: item } }}
+                href={{ pathname: "/quiz", query: { topic: item } }}
               >
                 {item}
                 {/* <Image src={`/${item}.jpg`} height={200} width={200} alt="" />
