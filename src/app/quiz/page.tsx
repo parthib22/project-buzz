@@ -1,20 +1,28 @@
 "use client";
-import { useSearchParams } from "next/navigation";
-import React, { Suspense, useState } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
+import React, { Suspense, useEffect, useState } from "react";
 import "../css/quiz.css";
 import Link from "next/link";
 import Image from "next/image";
 import AES from "crypto-js/aes";
 
+// data randomizer
+const dataRandomize = (topic: string) => {
+  const data = require(`../question_bank/${topic?.toLowerCase()}_bank.js`);
+  for (let i = data.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [data[i], data[j]] = [data[j], data[i]];
+  }
+  return data;
+};
 function Page() {
   const searchParams = useSearchParams();
-  const topic = searchParams.get("topic");
-  const data = require(`../question_bank/${topic?.toLowerCase()}_bank.js`);
+  const topic = searchParams.get("topic") || "";
   return (
     <>
       <main className="quizMain">
         <section className="quizWrapper">
-          <QuizComponent topic={topic} data={data} />
+          <QuizComponent topic={topic} data={dataRandomize(topic)} />
         </section>
       </main>
     </>
@@ -49,10 +57,11 @@ function QuizComponent(props: any) {
       </div>
       <div>
         <p>{`${index + 1} of ${data.length}`}</p>
-        <h2>{data[index].question}</h2>
+        <h2 suppressHydrationWarning>{data[index].question}</h2>
         <div className="optionWrapper">
           {data[index].options.map((option: any, id: any) => (
             <button
+              suppressHydrationWarning
               onClick={(e) =>
                 option == data[index].correct
                   ? setCheckCorrect(true)
@@ -69,7 +78,7 @@ function QuizComponent(props: any) {
         className="navBtnWrapper"
         onClick={() => {
           handleClick(index);
-          console.log(result);
+          // console.log(result);
         }}
       >
         <button onClick={() => index > 0 && setIndex((prev) => prev - 1)}>
@@ -109,6 +118,22 @@ function QuizComponent(props: any) {
   );
 }
 export default function Quiz() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleBeforeUnload = (e: any) => {
+      // Cancel the event
+      e.preventDefault();
+      // Chrome requires returnValue to be set
+      e.returnValue = true;
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
   return (
     <Suspense fallback={<div className="loaderContainer"></div>}>
       <Page />

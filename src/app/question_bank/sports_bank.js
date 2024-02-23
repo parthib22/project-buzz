@@ -1,27 +1,20 @@
 module.exports = [
-  // {
-  //   id: 0,
-  //   question:
-  //     "Founded by Bobby Jones and Clifford Roberts, which golf course was designed by Jones and Alister MacKenzie and opened for play in 1932?",
-  //   options: [
-  //     "Augusta National Golf Club",
-  //     "Pine Valley Golf Club",
-  //     "Cypress Point Club",
-  //     "Pebble Beach Golf Links.",
-  //   ],
-  //   correct: "Augusta National Golf Club",
-  //   hint: "This golf course is famous for hosting the annual Masters Tournament, one of the most prestigious events in professional golf.",
-  //   fact: "",
-  // },
-  // {
-  //   id: 1,
-  //   question:
-  //     " As mentioned on the USGA website, The Country Club in Atlantic City lay claim to the first use of which term that comes from the early 20th century American slang term meaning 'anything excellent'?",
-  //   options: ["Mulligan", "Handicap", "Birdie", "Bogey"],
-  //   correct: "Birdie",
-  //   hint: "",
-  //   fact: "",
-  // },
+  {
+    id: 0,
+    question: "Guess The Anagrams:SNOUT BAIL",
+    options: [" Usain Bolt", "Justin Gatlin", "Allyson Felix", "Mo Farah"],
+    correct: " Usain Bolt",
+    hint: "Atheletics",
+    fact: "",
+  },
+  {
+    id: 1,
+    question: "Guess The Anagrams:LOVELY BALL",
+    options: ["Lleyvolab", "Volleyball", "Yallvobell", "Voblyalle"],
+    correct: "Volleyball",
+    hint: "",
+    fact: "",
+  },
   {
     id: 2,
     question:
@@ -130,22 +123,6 @@ module.exports = [
     question: "Guess The Anagrams:ENTIRE REGION",
     options: ["Erogentirn", "Tonerigern", "Girenteron", "Orienteering"],
     correct: "Orienteering",
-    hint: "",
-    fact: "",
-  },
-  {
-    id: 13,
-    question: "Guess The Anagrams:SNOUT BAIL",
-    options: [" Usain Bolt", "Justin Gatlin", "Allyson Felix", "Mo Farah"],
-    correct: " Usain Bolt",
-    hint: "Atheletics",
-    fact: "",
-  },
-  {
-    id: 14,
-    question: "Guess The Anagrams:LOVELY BALL",
-    options: ["Lleyvolab", "Volleyball", "Yallvobell", "Voblyalle"],
-    correct: "Volleyball",
     hint: "",
     fact: "",
   },

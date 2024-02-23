@@ -1,6 +1,6 @@
 module.exports = [
   {
-    id: 2,
+    id: 0,
     question: " In C language, FILE is of which data type?",
     options: ["int", "char*", "struct", "None of the above"],
     correct: "struct",
@@ -8,7 +8,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 3,
+    id: 1,
     question: "Who invented Java Programming?",
     options: [
       "Steve Jobs",
@@ -21,7 +21,7 @@ module.exports = [
     fact: " Java programming was developed by James Gosling at Sun Microsystems in 1995. James Gosling is well known as the father of Java.",
   },
   {
-    id: 6,
+    id: 2,
     question:
       "Which type of dragon does Viktor Krum face in the first task of the Triwizard Tournament?",
     options: [
@@ -35,7 +35,7 @@ module.exports = [
     fact: "The Hungarian Horntail is the most dangerous of the four dragons.",
   },
   {
-    id: 8,
+    id: 3,
     question: "Where Did It Originate:Nasi Goreng",
     options: ["Indonesia", "Bahrain", "Mexico", "Vietnam"],
     correct: "Indonesia",
@@ -43,7 +43,7 @@ module.exports = [
     fact: "Fried rice dish, usually cooked with pieces of meat and vegetables",
   },
   {
-    id: 10,
+    id: 4,
     question:
       "Which film series from the 2000s stars Tom Cruise as Ethan Hunt?",
     options: [
@@ -57,7 +57,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 11,
+    id: 5,
     question: "Who played Sharkboy in Sharkboy and Lavagirl?",
     options: ["Taylor Lautner", "Zac Efron", "Jake Gyllenhaal", "Shia LaBeouf"],
     correct: "Taylor Lautner",
@@ -65,7 +65,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 3,
+    id: 6,
     question: "Can you Guess The Food Anagram:AMOK AS US (8)",
     options: ["Soak Maus", "Souma Kas", "Moussaka", "Amass You"],
     correct: "Moussaka",
@@ -73,7 +73,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 4,
+    id: 7,
     question: "What is the most stolen food in the world?",
     options: ["Cheese", "Bread", "Milk", "Chocolate"],
     correct: "Cheese",
@@ -81,7 +81,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 11,
+    id: 8,
     question: "True or False: Apples belong to the rose family.",
     options: ["Partially True", "False", "True", "Partially False"],
     correct: "True",
@@ -89,7 +89,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 12,
+    id: 9,
     question:
       "True or False: Oysters and Lobsters used to be the food of the working class.",
     options: ["Partially True", "False", "True", "Partially False"],
@@ -98,7 +98,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 2,
+    id: 10,
     question:
       "Can you name the actor who plays Darth Vader in the Star Wars movies?",
     options: ["David Prowse", "Harrison Ford", "Oscar Isaac", "John Boyega"],
@@ -107,7 +107,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 3,
+    id: 11,
     question: "Name the teen heartthrob who played the role of Cedric Diggory.",
     options: [
       "Robert Pattinson",
@@ -120,7 +120,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 4,
+    id: 12,
     question:
       "Which of the following dismissals is NOT a valid way to get out?",
     options: ["Bailed", "Caught", "Run Out", "Bowled"],
@@ -129,7 +129,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 5,
+    id: 13,
     question: "What is a cricket ball made of?",
     options: [
       "Rubber",
@@ -142,7 +142,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 1,
+    id: 14,
     question: "What is the largest dog breed in the world?",
     options: [
       "Scottish Deerhound",
@@ -155,7 +155,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 2,
+    id: 15,
     question: "How many teeth do normal adult dogs have?",
     options: ["42", "36", "44", "69"],
     correct: "42",
@@ -163,7 +163,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 8,
+    id: 16,
     question: "Where was England legend David Beckham born?",
     options: ["Manchester", "Norwich", "London", "Carlisle"],
     correct: "London",
@@ -171,7 +171,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 14,
+    id: 17,
     question: "The SQL LIKE operator is used in which of the following clause?",
     options: ["Having", "Select", "Where", "Group by"],
     correct: "Where",
@@ -179,7 +179,7 @@ module.exports = [
     fact: "The SQL LIKE operator is used in a WHERE clause to search for a specified pattern in a column.",
   },
   {
-    id: 12,
+    id: 18,
     question: "Guess The Anagrams:ENTIRE REGION",
     options: ["Erogentirn", "Tonerigern", "Girenteron", "Orienteering"],
     correct: "Orienteering",
@@ -187,7 +187,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 13,
+    id: 19,
     question: "Guess The Anagrams:SNOUT BAIL",
     options: [" Usain Bolt", "Justin Gatlin", "Allyson Felix", "Mo Farah"],
     correct: " Usain Bolt",
@@ -195,7 +195,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 6,
+    id: 20,
     question: "True or False: You can hypnotise a chicken?",
     options: ["Partially True", "False", "True", "Partially False"],
     correct: "True",
@@ -203,7 +203,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 9,
+    id: 21,
     question:
       "True or False: Coral (in coral reefs) are plants and not animals?",
     options: ["Partially True", "False", "True", "Partially False"],
@@ -212,7 +212,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 10,
+    id: 22,
     question: "Guess The Anagram: RAPTOR",
     options: ["Parrot", "Raptor", "Trapor", "Raprot"],
     correct: "Parrot",
@@ -220,7 +220,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 13,
+    id: 23,
     question: "Guess The Anagrams: SOCCER IDOLS",
     options: ["Crocodiles", "Crockodiles", "Socerlodes", "Idolcress"],
     correct: "Crocodiles",
@@ -228,7 +228,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 14,
+    id: 24,
     question: "What is the name of the horse of Alexander the Great?",
     options: ["Copenhagen", "Comanche", "Bucephalus", "Chaitak"],
     correct: "Bucephalus",
@@ -236,7 +236,7 @@ module.exports = [
     fact: "",
   },
   {
-    id: 6,
+    id: 25,
     question: "Which of the following is not javascript data types?",
     options: [
       "Null type",
@@ -249,7 +249,7 @@ module.exports = [
     fact: " JavaScript is a dynamic, loosely typed language. Variables in JavaScript aren't tied to any specific value type, and each variable can be assigned and reassigned to values of all the types",
   },
   {
-    id: 10,
+    id: 26,
     question: "All keywords in Python are in _________",
     options: [
       "Capitalized",
@@ -262,7 +262,7 @@ module.exports = [
     fact: "True, False and None are capitalized while the others are in lower case.",
   },
   {
-    id: 11,
+    id: 27,
     question:
       "Python supports the creation of anonymous functions at runtime, using a construct called __________",
     options: ["pi", "anonymous", "lambda", "none of the mentioned"],
