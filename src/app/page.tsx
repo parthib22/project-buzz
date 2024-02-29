@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import "./css/page.modules.css";
+import { signIn, signOut, useSession } from "next-auth/react";
 
 export default function Home() {
+  const { status } = useSession();
   return (
     <>
       <main className="homeMain">
@@ -22,10 +24,27 @@ export default function Home() {
             expanding your knowledge base with each game. No bells, no whistles,
             just pure quizzing satisfaction!
           </p>
-          <Link href="/category">
-            Start Quiz
-            <Image height={25} width={25} src="/round_arrow.svg" alt="arrow" />
-          </Link>
+          {status === "authenticated" ? (
+            <Link href="/category">
+              Start Quiz
+              <Image
+                height={25}
+                width={25}
+                src="/round_arrow.svg"
+                alt="arrow"
+              />
+            </Link>
+          ) : (
+            <Link href="/login">
+              Register / Sign In
+              <Image
+                height={25}
+                width={25}
+                src="/round_arrow.svg"
+                alt="arrow"
+              />
+            </Link>
+          )}
         </section>
       </main>
     </>

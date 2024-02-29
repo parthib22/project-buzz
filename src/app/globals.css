@@ -9,6 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  position: relative;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -104,5 +105,91 @@ a {
   }
   50% {
     transform: translateX(95%);
+  }
+}
+
+/* COMPONENETS */
+
+/* PROFILE */
+
+.profileContainer {
+  position: absolute;
+  z-index: 999;
+  /* top: 20px; */
+  /* right: 20px; */
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: #eee;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  padding-top: 50px;
+  border: 1px solid #111;
+  border-radius: 50px;
+  transition: all 0.2s ease !important;
+}
+
+.profileContainer h1,
+.profileContainer p {
+  margin: 0;
+}
+
+.profile {
+  /* width: 50px; */
+  /* height: 50px; */
+  padding: 0px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.dpWrapper {
+  position: absolute;
+  /* top: 20px; */
+  /* right: 20px; */
+  z-index: 1000;
+  border-radius: 50px;
+  height: 55px;
+  width: 55px;
+  background: linear-gradient(45deg, #d24545, #0b60b0);
+  cursor: pointer;
+}
+
+.dpWrapper > img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #eee;
+  /* border: 2px solid #222; */
+}
+
+.profileContainer button {
+  border: 0;
+  background-color: #11111100;
+  color: #000;
+  font-weight: 700;
+  margin-block: 20px;
+}
+#signout {
+  color: #d50000;
+}
+#signin {
+  color: #006400;
+}
+/* large */
+@media only screen and (width >= 700px) {
+  .profileContainer,
+  .dpWrapper {
+    top: 10vh;
+    right: 15vw;
+  }
+}
+/* small */
+@media only screen and (width < 700px) {
+  .profileContainer,
+  .dpWrapper {
+    top: 20px;
+    right: 20px;
   }
 }
