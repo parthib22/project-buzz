@@ -15,9 +15,24 @@ const userSchema = new Schema(
       type: String,
       required: false,
     },
-    attempt: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Attempt",
+    round: {
+      type: [
+        {
+          topic: {
+            type: String,
+          },
+          result: {
+            type: Number,
+          },
+          date: {
+            type: Date,
+            default: Date.now,
+            required: true,
+          },
+        },
+      ],
+      required: true,
+      default: [],
     },
   },
   { timestamps: true }

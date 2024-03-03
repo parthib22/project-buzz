@@ -115,6 +115,11 @@
   gap: 10px;
   transition: all 0.5s ease;
 }
+.navBtnWrapper button a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .navBtnWrapper button:hover {
   background-color: #eee;
 }

@@ -1,0 +1,39 @@
+.authMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.authMain > span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.authMain h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.authMain button {
+  padding: 10px;
+  padding-inline: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #111;
+  border-radius: 50px;
+  background-color: #fff;
+  display: inline-flex;
+  gap: 7px;
+  line-height: 20px;
+}
+
+.authMain p {
+  font-size: 10px;
+  color: #555;
+  position: absolute;
+  bottom: 20px;
+}

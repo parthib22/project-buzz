@@ -35,9 +35,9 @@ const handler = NextAuth({
     },
   },
   pages: {
-    signIn: "/",
+    signIn: "/auth",
     error: "/error",
-    signOut: "/",
+    signOut: "/auth",
   },
 });
 

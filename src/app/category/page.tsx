@@ -3,19 +3,29 @@ import React, { useState } from "react";
 import Image from "next/image";
 import "../css/category.css";
 import Link from "next/link";
+import Profile from "../components/Profile";
+import { CircularProgress } from "@mui/material";
 
 export default function Category() {
   const category = ["movies", "food", "sports", "nature", "coding", "random"];
-
+  const [cat, setCat] = useState([false, false, false, false, false, false]);
   return (
     <>
       <main className="choiceMain">
+        <Profile />
         <section className="choiceWrapper">
-          <Link href="/" className="backBtn">
-            <Image src={"/round_arrow.svg"} height={30} width={30} alt="back" />
-          </Link>
           <div>
-            <h1>Choose</h1>
+            <div>
+              <Link href="/" className="backBtn">
+                <Image
+                  src={"/round_arrow.svg"}
+                  height={30}
+                  width={30}
+                  alt="back"
+                />
+              </Link>
+              <h1>Choose</h1>
+            </div>
             <span>-a topic to start the quiz</span>
           </div>
           <span className="categoryWrapper">
@@ -23,8 +33,21 @@ export default function Category() {
               <Link
                 key={id}
                 href={{ pathname: "/quiz", query: { topic: item } }}
+                onClick={() =>
+                  setCat((prev) => {
+                    const newCat = [...prev];
+                    newCat[id] = true;
+                    return newCat;
+                  })
+                }
               >
                 {item}
+                {cat[id] && (
+                  <CircularProgress
+                    color="inherit"
+                    style={{ color: "#000", height: 15, width: 15 }}
+                  />
+                )}
               </Link>
             ))}
           </span>

@@ -5,11 +5,18 @@ const attemptSchema = new Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
   },
-  attempt: {
-    type: Array,
-    required: false,
-    default: [],
-  },
+  round: [
+    {
+      topic: {
+        type: Array,
+        required: true,
+      },
+      result: {
+        type: Array,
+        required: true,
+      },
+    },
+  ],
 });
 
 const Attempt =

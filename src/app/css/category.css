@@ -19,13 +19,16 @@
   gap: 50px;
 }
 .choiceWrapper .backBtn {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
 }
 .choiceWrapper .backBtn img {
   /* opacity: 0.5; */
   rotate: 180deg;
+}
+.choiceWrapper > div > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .choiceWrapper h1 {
   margin: 0;
@@ -47,18 +50,16 @@
 }
 .categoryWrapper {
   display: grid;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
-  /* align-items: center; */
-  /* justify-content: center; */
   gap: 10px 15px;
   padding: 0;
-  /* margin: 50px; */
 }
 /* Large */
 @media only screen and (width >=800px) {
   .categoryWrapper {
     grid-template-columns: repeat(3, 200px);
+  }
+  .choiceWrapper > div > div {
+    margin-left: -40px;
   }
 }
 /* Small */
@@ -84,6 +85,10 @@
   border-radius: 10px;
   font-size: 18px;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
 }
 .categoryWrapper a:hover {
   color: #fff;
@@ -92,6 +97,10 @@
 .categoryWrapper a:focus {
   background-color: #111 !important;
   color: #fff;
+}
+.categoryWrapper a:hover > span,
+.categoryWrapper a:focus > span {
+  filter: invert();
 }
 .categoryWrapper a:nth-child(1) {
   background-color: #ff9b9b;
@@ -135,47 +144,3 @@
   background-position: 0 0;
   animation: animate-gradient 5s ease-in-out infinite alternate-reverse;
 }
-/* @keyframes animate-gradient {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
-} */
-/* .categoryWrapper a:hover > img,
-.categoryWrapper a:focus > img {
-  filter: brightness(1);
-} */
-/* .categoryWrapper a:hover > h2,
-.categoryWrapper a:focus > h2 {
-  filter: invert(0);
-  color: #fff;
-  text-shadow: 0 0 10px #000;
-  display: none;
-  color: #ffffff00;
-  -webkit-text-stroke: 1px transparent;
-} */
-/* .categoryWrapper a img {
-  position: relative;
-  filter: brightness(0.7) saturate(0.7);
-  border-radius: 10px;
-} */
-/* .categoryWrapper a h2 {
-  height: 200px;
-  aspect-ratio: auto 1/1;
-  line-height: 200px;
-  position: absolute;
-  text-transform: lowercase;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  color: #00000000;
-  font-size: 36px;
-  letter-spacing: -1px;
-  font-weight: 900;
-  text-align: center;
-  background-clip: text;
-  filter: brightness(1.5) invert(1);
-} */

@@ -87,6 +87,10 @@
   color: #fff;
   background-color: #000;
 }
+.linkWrapper a:hover > img,
+.linkWrapper a:hover > span {
+  filter: invert();
+}
 /* Large */
 @media only screen and (width >= 700px) {
   .resultWrapper {

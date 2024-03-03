@@ -1,12 +1,22 @@
 "use client";
-import { signIn, signOut, useSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
+import CryptoJS from "crypto-js";
+import { useRouter } from "next/navigation";
+import { CircularProgress } from "@mui/material";
 
 export default function Profile() {
+  const router = useRouter();
   const [card, setCard] = useState(true);
+  const [loading, setLoading] = useState(false);
   const { status, data: session } = useSession();
-  //   console.log(session);
+  const emailID = CryptoJS.AES.encrypt(
+    `${session?.user?.email}`,
+    "email"
+  ).toString();
+
   if (status === "authenticated")
     return (
       <>
@@ -20,41 +30,20 @@ export default function Profile() {
         </div>
         <div className={`profileContainer ${card && "profile"}`}>
           <h1>{session?.user?.name}</h1>
-          <p>{session?.user?.email}</p>
-          <button
-            onClick={() =>
-              signOut({ callbackUrl: `${window.location.origin}` })
-            }
-            id="signout"
+          <Link
+            id="account"
+            href={`/account/${encodeURIComponent(emailID)}`}
+            onClick={() => setLoading(true)}
           >
-            Sign Out
-          </button>
+            {loading && (
+              <CircularProgress
+                color="inherit"
+                style={{ color: "red", height: 8, width: 8, marginRight: 10 }}
+              />
+            )}
+            Account & Settings
+          </Link>
         </div>
       </>
     );
-  //   else
-  //     return (
-  //       <>
-  //         <div className="profileContainer unprofile">
-  //           <div className="dpWrapper">
-  //             <Image
-  //               src={`https://art.pixilart.com/e2e8c97c55ab35d.png`}
-  //               height={50}
-  //               width={50}
-  //               alt="profile picture"
-  //             />
-  //           </div>
-  //           <button
-  //             onClick={() =>
-  //               signIn("google", {
-  //                 callbackUrl: `${window.location.origin}`,
-  //               })
-  //             }
-  //             id="signin"
-  //           >
-  //             Sign In
-  //           </button>
-  //         </div>
-  //       </>
-  //     );
 }
