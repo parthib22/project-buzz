@@ -17,7 +17,7 @@ function Page() {
 
   const cryptoDecrypt = () =>
     JSON.parse(
-      CryptoJS.AES.decrypt(id, "secret key 123").toString(CryptoJS.enc.Utf8)
+      CryptoJS.AES.decrypt(id, "player_data").toString(CryptoJS.enc.Utf8)
     );
   const { topic, result } = cryptoDecrypt();
   console.log(topic, result);

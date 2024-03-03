@@ -17,11 +17,11 @@ export async function POST(request: any) {
 }
 
 export async function PUT(request: any) {
-  const { email, topic, result } = await request.json();
+  const { email, topic, result, answer } = await request.json();
   try {
     await connectMongoDB();
     const user = await User.findOne({ email });
-    await user.round.push({ topic: topic, result: result });
+    await user.round.push({ topic: topic, result: result, answer: answer });
     await user.save();
     return NextResponse.json(
       { message: "Round data push successful." },

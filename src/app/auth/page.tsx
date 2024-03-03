@@ -3,13 +3,15 @@ import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import "../css/auth.css";
 import Image from "next/image";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import Loading from "../components/Loading";
 import Link from "next/link";
+import { CircularProgress } from "@mui/material";
 
 export default function Login() {
   const { status } = useSession();
   const router = useRouter();
+  const [loading, setLoading] = useState(false);
   if (status === "authenticated") router.push("/category");
   else
     return (
@@ -25,16 +27,20 @@ export default function Login() {
                 style={{ rotate: "180deg" }}
               />
             </Link>
-            <h1>Register or Sign in to start...</h1>
+            <h1>
+              Register
+              <p>or Sign in to start...</p>
+            </h1>
           </span>
           <button
-            onClick={() =>
+            onClick={() => {
               signIn("google", {
                 callbackUrl: `${window.location.origin}/category`,
-              })
-            }
+              });
+              setLoading(true);
+            }}
           >
-            Sign in with
+            Continue with
             <Image
               src={"/google-icon.svg"}
               height={20}
@@ -42,7 +48,29 @@ export default function Login() {
               alt="google"
             />
           </button>
-          <p>more login options coming soon...</p>
+          {loading && (
+            <CircularProgress
+              color="inherit"
+              style={{
+                color: "#000",
+                height: 25,
+                width: 25,
+                margin: 30,
+                position: "absolute",
+                bottom: 50,
+              }}
+            />
+          )}
+          <p
+            style={{
+              fontSize: 10,
+              color: "#555",
+              position: "absolute",
+              bottom: 20,
+            }}
+          >
+            more login options coming soon...
+          </p>
         </main>
       </Suspense>
     );

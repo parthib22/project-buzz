@@ -18,16 +18,14 @@ export default function Home() {
         <section className="imageWrapper"></section>
         <section className="textWrapper">
           <div>
-            <h2>beta</h2>
-            <h1>Trove</h1>
+            <h2>beta 3</h2>
+            <h1>Buzz</h1>
           </div>
           <p>
-            Sharpen your mind and embark on a thrilling trivia adventure with
-            Buzz! Explore a diverse library of challenging questions, spanning
-            every topic imaginable. Test your solo skills, push your limits, and
-            see just how much you know. Every answer reveals fascinating facts,
-            expanding your knowledge base with each game. No bells, no whistles,
-            just pure quizzing satisfaction!
+            A no-nonsense quiz app. Keeping it easy and stressless. Dont worry,
+            there are no time limits and lame powerups or lifelines. Custom
+            questionaire is still under development. More stuff are coming
+            soon...
           </p>
 
           <Link

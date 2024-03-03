@@ -20,6 +20,11 @@
     margin-left: 50px;
     flex: 1;
   }
+  .infoWrapper h1,
+  .infoWrapper p {
+    text-align: left;
+    width: fit-content;
+  }
   .attemptWrapper {
     height: 100% !important;
     margin-right: 50px;
@@ -36,6 +41,11 @@
     flex: 1;
     width: 90%;
     align-items: center;
+  }
+  .infoWrapper h1,
+  .infoWrapper p {
+    text-align: center;
+    width: 100%;
   }
   .attemptWrapper {
     flex: 1;
@@ -83,7 +93,6 @@
 .infoWrapper p {
   margin: 0;
   margin-block: -10px 10px;
-  width: fit-content;
   font-size: 10px;
   font-weight: 300;
   color: #222;
@@ -134,8 +143,9 @@
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-inline: min(50px, 5vw);
+  justify-content: space-around;
+  gap: 20px;
+  padding-inline: min(10px, 5vw);
   border-radius: 10px;
   color: #fff;
   text-shadow: 0 0 5px #0000005f;
@@ -144,12 +154,64 @@
   font-family: "Playfair Display", sans-serif;
   font-weight: 600;
   font-size: 30px;
+  line-height: 30px;
   font-style: italic;
 }
+.attemptWrapper li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.attemptWrapper li > div > p {
+  margin: 0;
+  font-size: 8px;
+}
+.attemptWrapper .answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* max-width: 30%; */
+}
+.attemptWrapper .answer > div {
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  font-size: 8px;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  aspect-ratio: 1/1;
+}
+.attemptWrapper .answer .👍 {
+  height: 7px;
+  width: 7px;
+  background-color: #000;
+}
+.attemptWrapper .answer .👎 {
+  height: 4px;
+  width: 4px;
+  border: 2px solid #000;
+  /* background-color: red; */
+}
 .attemptWrapper li .result {
+  /* font-size: 24px; */
+  /* line-height: 70px; */
+  color: #000 !important;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
+  /* text-shadow: 0 0 3px #000; */
 }
 .attemptWrapper li .result > span {
-  font-size: 16px;
+  font-size: 14px;
+}
+
+@media only screen and (width <= 450px) {
+  .attemptWrapper ul li {
+    justify-content: space-between;
+    padding-inline: min(50px, 5vw);
+  }
+  .attemptWrapper .answer {
+    display: none;
+  }
 }

@@ -14,7 +14,8 @@ const PostResult = async (
   status: string,
   email: string,
   topic: string,
-  result: number
+  result: number,
+  answer: boolean[]
 ) => {
   if (status === "authenticated") {
     try {
@@ -27,6 +28,7 @@ const PostResult = async (
           email,
           topic,
           result,
+          answer,
         }),
       });
       if (!res.ok) throw new Error("Failed to PUT.");
@@ -68,11 +70,13 @@ function QuizComponent(props: any) {
   const [result, setResult] = useState(Array(data.length).fill(false));
   const [checkCorrect, setCheckCorrect] = useState<boolean>(false);
   const [loading, setLoading] = useState(false);
-
-  const handleClick = (index: any) => {
-    setResult((prev) => ({ ...prev, [index]: checkCorrect }));
+  const handleClick = (index: number) => {
+    console.log(result);
+    setResult((prev) =>
+      prev.map((item, i) => (i === index ? checkCorrect : item))
+    );
   };
-  const resultCount = Object.values(result).filter((x) => x === true).length;
+  const resultCount = result.filter((x) => x === true).length;
   const perResult = (value: number) => {
     const pValue = (value * 100) / data.length;
     const stringValue = pValue % 10 > 0 ? pValue.toFixed(1) : pValue.toFixed(0);
@@ -81,7 +85,7 @@ function QuizComponent(props: any) {
   const cryptoEncrypt = (topic: string, result: number) =>
     CryptoJS.AES.encrypt(
       JSON.stringify({ topic, result }),
-      "secret key 123"
+      "player_data"
     ).toString();
   //auth check
   const { status, data: session } = useSession();
@@ -164,7 +168,13 @@ function QuizComponent(props: any) {
                 }}
                 onClick={() => {
                   !loading &&
-                    PostResult(status, email, topic, perResult(resultCount));
+                    PostResult(
+                      status,
+                      email,
+                      topic,
+                      perResult(resultCount),
+                      result
+                    );
                   setLoading(true);
                 }}
               >

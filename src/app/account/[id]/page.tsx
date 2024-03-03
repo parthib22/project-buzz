@@ -26,6 +26,33 @@ export default async function Account({ params }: any) {
   ).toString(CryptoJS.enc.Utf8);
   const round = await attemptData(emailID);
 
+  const handleDate = (date: Date) => {
+    const hZ = (n: number) => `${n < 10 ? "0" : ""}${n}`;
+    const MM_str = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+
+    const date_ob = new Date(date);
+    const DD = hZ(date_ob.getDate());
+    const MM = MM_str[date_ob.getMonth()];
+    const YYYY = date_ob.getFullYear();
+    const H = hZ(date_ob.getHours());
+    const M = hZ(date_ob.getMinutes());
+
+    return `${DD} ${MM} ${YYYY} | ${H}:${M}`;
+  };
+
   return (
     <Suspense fallback={<Loading />}>
       <main className="accMain">
@@ -40,7 +67,7 @@ export default async function Account({ params }: any) {
             ) : (
               <ul className="roundWrapper">
                 {round?.map((item: any) => {
-                  const { topic, result, _id } = item;
+                  const { topic, result, _id, date, answer } = item;
                   return (
                     <li
                       key={_id}
@@ -48,38 +75,39 @@ export default async function Account({ params }: any) {
                       style={{
                         color: "#000",
                         textShadow: "none",
-                        backgroundColor: `${
-                          result > 70
+                        background: `${
+                          result > 60
                             ? "#a1eebd"
                             : result > 40
                             ? "#ffcf96"
                             : "#ff9b9b"
                         }`,
                         border: `2px solid #000`,
-                        // ${
-                        //   result > 70
-                        //     ? "#0d9276"
-                        //     : result > 40
-                        //     ? "#f57d1f"
-                        //     : "#d24545"
-                        // }
                       }}
                     >
-                      <span
-                        className="topic"
-                        style={{
-                          fontWeight: 500,
-                        }}
-                      >
-                        {topic}
-                      </span>
+                      <div>
+                        <span className="topic">{topic}</span>
+                        <p>{handleDate(date)}</p>
+                      </div>
+                      <div className="answer">
+                        {answer.map((item: boolean, id: number) => (
+                          <div key={id} className={`${item ? "👍" : "👎"}`} />
+                        ))}
+                      </div>
                       <span
                         className="result"
                         style={{
-                          fontWeight: 600,
+                          color: `${
+                            result > 60
+                              ? "#0d9276"
+                              : result > 40
+                              ? "#f57d1f"
+                              : "#d24545"
+                          }`,
                         }}
                       >
-                        {result} <span>%</span>
+                        {result}
+                        <span>%</span>
                       </span>
                     </li>
                   );

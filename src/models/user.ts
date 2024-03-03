@@ -24,6 +24,10 @@ const userSchema = new Schema(
           result: {
             type: Number,
           },
+          answer: {
+            type: Array,
+            default: [],
+          },
           date: {
             type: Date,
             default: Date.now,

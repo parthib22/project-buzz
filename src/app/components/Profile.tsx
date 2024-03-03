@@ -35,12 +35,16 @@ export default function Profile() {
             href={`/account/${encodeURIComponent(emailID)}`}
             onClick={() => setLoading(true)}
           >
-            {loading && (
-              <CircularProgress
-                color="inherit"
-                style={{ color: "red", height: 8, width: 8, marginRight: 10 }}
-              />
-            )}
+            <CircularProgress
+              color="inherit"
+              style={{
+                color: "red",
+                height: 8,
+                width: 8,
+                marginRight: 10,
+                visibility: `${loading ? "visible" : "hidden"}`,
+              }}
+            />
             Account & Settings
           </Link>
         </div>
