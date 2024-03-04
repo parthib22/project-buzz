@@ -25,7 +25,7 @@ module.exports = [
     id: 2,
     question:
       "Can you name the actor who plays Darth Vader in the Star Wars movies?",
-    options: ["David Prowse", "Harrison Ford", "Oscar Isaac", "John Boyega"], // store options in an array
+    options: ["David Prowse", "Harrison Ford", "Oscar Isaac", "John Boyega"],
     correct: "David Prowse",
     hint: "",
     fact: "",
@@ -38,7 +38,7 @@ module.exports = [
       "Rupert Grint",
       "Daniel RadCliffe",
       "Tom Felton",
-    ], // store options in an array
+    ],
     correct: "Robert Pattinson",
     hint: "",
     fact: "",
@@ -47,7 +47,7 @@ module.exports = [
     id: 4,
     question:
       " Can you remember which spell causes the tip of a wand to light up?",
-    options: ["Lumos", "Nox", "Protego", "Imperio"], // store options in an array
+    options: ["Lumos", "Nox", "Protego", "Imperio"],
     correct: "Lumos",
     hint: "Related to Light's Synonym",
     fact: "You should try saying lumos to ur phone's assistant and watch",
@@ -55,7 +55,7 @@ module.exports = [
   {
     id: 5,
     question: " How many staircases does Hogwarts have?",
-    options: ["142", "300", "210", "70"], // store options in an array
+    options: ["142", "300", "210", "70"],
     correct: "142",
     hint: "",
     fact: "These aren't your average, stationary stairs either. Each has a mind of its own, meaning they move at different speeds, change destinations on certain days, and sometimes even vanish entirely!",
@@ -69,7 +69,7 @@ module.exports = [
       " Chinese Fireball",
       "Swedish Short-Snout",
       "Common Welsh Green",
-    ], // store options in an array
+    ],
     correct: "Chinese Fireball",
     hint: "",
     fact: "The Hungarian Horntail is the most dangerous of the four dragons.",
@@ -82,7 +82,7 @@ module.exports = [
       "The Incredible Hulk",
       "Shrek the Third",
       "The Green Mile",
-    ], // store options in an array
+    ],
     correct: "Shrek the Third",
     hint: "The Third Green Monster",
     fact: "",
@@ -95,7 +95,7 @@ module.exports = [
       "The Sixth Sense",
       "Senseless",
       "Sense and Sensibility",
-    ], // store options in an array
+    ],
     correct: "The Sixth Sense",
     hint: "Cole Sear",
     fact: "",
@@ -108,7 +108,7 @@ module.exports = [
       "Kevin and Perry Go Large",
       "My Left Foot",
       "American Beauty",
-    ], // store options in an array
+    ],
     correct: "Home Alone",
     hint: "Kevin",
     fact: "",
@@ -122,7 +122,7 @@ module.exports = [
       "Mission: Impossible",
       "The Bourne Identity",
       "Die Hard: Mission Impossible",
-    ], // store options in an array
+    ],
     correct: "Mission: Impossible",
     hint: "This film series features high-stakes espionage missions led by a skilled agent named Ethan Hunt.",
     fact: "",
@@ -130,7 +130,7 @@ module.exports = [
   {
     id: 11,
     question: "Who played Sharkboy in Sharkboy and Lavagirl?",
-    options: ["Taylor Lautner", "Zac Efron", "Jake Gyllenhaal", "Shia LaBeouf"], // store options in an array
+    options: ["Taylor Lautner", "Zac Efron", "Jake Gyllenhaal", "Shia LaBeouf"],
     correct: "Taylor Lautner",
     hint: "He's known for his role as a werewolf in another popular film series",
     fact: "",
@@ -144,7 +144,7 @@ module.exports = [
       "Teen Beach Movie",
       "High School Musical 2",
       "High School Musical 3:",
-    ], // store options in an array
+    ],
     correct: "High School Musical",
     hint: "This movie features a group of students who come together to perform in a musical",
     fact: 'This movie launched Zac Efron\'s career as a teen heartthrob and features iconic songs like "Breaking Free" and "We\'re All in This Together',
@@ -158,7 +158,7 @@ module.exports = [
       "Flushed Away",
       "Stuart Little",
       "Ratatouille",
-    ], // store options in an array
+    ],
     correct: "Ratatouille",
     hint: "This Pixar film is set in Paris and follows the culinary adventures of a rat named Remy",
     fact: "",
@@ -167,7 +167,7 @@ module.exports = [
     id: 14,
     question:
       "In the animated film, The Jungle Book, who says, “The bare necessities of life will come to you”?",
-    options: ["King Louie", "Bagheera", "Baloo", "Raksha"], // store options in an array
+    options: ["King Louie", "Bagheera", "Baloo", "Raksha"],
     correct: "Baloo",
     hint: ' This character sings the song "The Bare Necessities," which features the famous line "The bare necessities of life will come to you',
     fact: "",

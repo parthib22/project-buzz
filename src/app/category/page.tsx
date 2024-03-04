@@ -26,7 +26,7 @@ export default function Category() {
               </Link>
               <h1>Choose</h1>
             </div>
-            <span>-a topic to start the quiz</span>
+            <p>a topic to start the quiz</p>
           </div>
           <span className="categoryWrapper">
             {category.map((item, id) => (
@@ -51,7 +51,14 @@ export default function Category() {
               </Link>
             ))}
           </span>
+          {/* <span className="customWrapper">
+            <p>or</p>
+            <button>
+              {"< "}create your own{" />"}
+            </button>
+          </span> */}
         </section>
+        <p id="p">soon you will be able to create your own questionaire...</p>
       </main>
     </>
   );
