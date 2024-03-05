@@ -58,7 +58,9 @@ export default function Category() {
             </button>
           </span> */}
         </section>
-        <p id="p">soon you will be able to create your own questionaire...</p>
+        <p className="p">
+          soon you will be able to create your own questionaire...
+        </p>
       </main>
     </>
   );

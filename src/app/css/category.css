@@ -58,14 +58,9 @@
   .choiceWrapper h1 {
     font-size: 72px;
   }
-  .choiceWrapper p {
-  }
 }
 /* Small */
 @media only screen and (width <800px) {
-  .choiceMain {
-    /* padding-block: 50px; */
-  }
   .categoryWrapper {
     width: 100%;
     grid-template-columns: repeat(2, calc(50% - 7.5px));
@@ -195,12 +190,3 @@
   background-color: #111 !important;
   color: #fff;
 } */
-#p {
-  width: 100%;
-  position: absolute;
-  bottom: 20px;
-  text-align: center;
-  color: #555;
-  font-size: 10px;
-  font-style: normal;
-}

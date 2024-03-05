@@ -61,15 +61,9 @@ export default function Login() {
               }}
             />
           )}
-          <p
-            style={{
-              fontSize: 10,
-              color: "#555",
-              position: "absolute",
-              bottom: 20,
-            }}
-          >
+          <p className="p">
             more login options coming soon...
+            {/* <Image src={"/close_icon.svg"} height={15} width={15} alt="close" /> */}
           </p>
         </main>
       </Suspense>
