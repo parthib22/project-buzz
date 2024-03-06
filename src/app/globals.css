@@ -67,20 +67,29 @@ a {
     width: 100%;
   }
   .p {
+    /* height: 3rem; */
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: -10px;
     background-color: #000;
     border-bottom: 1px solid #111;
     padding: 10px;
     text-align: right;
-    color: #ddd;
+    color: #fff;
     font-size: 10px;
     font-style: normal;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+    transition: top 0.5s ease-out;
+  }
+  .p img {
+    position: absolute;
+    left: 20px;
+  }
+  .go-up {
+    top: -50px;
   }
 }
 

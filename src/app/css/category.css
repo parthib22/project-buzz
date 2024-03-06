@@ -154,18 +154,22 @@
   gap: 15px;
   flex-direction: column;
   position: relative;
+  /* disabled */
+  cursor: default;
+  opacity: 0.3;
 }
 .customWrapper p {
   margin: 0;
   font-size: 14px;
   font-weight: 500;
+  display: inline;
 }
 .customWrapper button {
   max-width: 300px;
   width: 300px;
   text-decoration: none;
   color: #000;
-  background-color: #ffffff00;
+  background-color: #ddd;
   border: 2px solid #000;
   padding: 20px;
   border-radius: 10px;
@@ -179,7 +183,6 @@
   gap: 7px;
   /* disabled */
   cursor: default;
-  opacity: 0.5;
 }
 /* .customWrapper button:hover {
   color: #fff;

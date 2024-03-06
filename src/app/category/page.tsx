@@ -9,6 +9,8 @@ import { CircularProgress } from "@mui/material";
 export default function Category() {
   const category = ["movies", "food", "sports", "nature", "coding", "random"];
   const [cat, setCat] = useState([false, false, false, false, false, false]);
+  const [close, setClose] = useState(false);
+
   return (
     <>
       <main className="choiceMain">
@@ -51,14 +53,21 @@ export default function Category() {
               </Link>
             ))}
           </span>
-          {/* <span className="customWrapper">
-            <p>or</p>
+          <span className="customWrapper">
+            {/* <p>or</p> */}
             <button>
               {"< "}create your own{" />"}
             </button>
-          </span> */}
+          </span>
         </section>
-        <p className="p">
+        <p className={`p ${close && "go-up"}`}>
+          <Image
+            src={"/close_icon.svg"}
+            height={15}
+            width={15}
+            alt="close"
+            onClick={() => setClose(true)}
+          />
           soon you will be able to create your own questionaire...
         </p>
       </main>

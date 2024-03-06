@@ -5,7 +5,7 @@ export const config = {
     "/category",
     "/quiz",
     "/result",
-    "/leaderboard",
+    // "/leaderboard",
     "/error",
     "/account/:id*",
   ],

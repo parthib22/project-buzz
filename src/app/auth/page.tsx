@@ -12,6 +12,7 @@ export default function Login() {
   const { status } = useSession();
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  const [close, setClose] = useState(false);
   if (status === "authenticated") router.push("/category");
   else
     return (
@@ -61,9 +62,15 @@ export default function Login() {
               }}
             />
           )}
-          <p className="p">
+          <p className={`p ${close && "go-up"}`}>
+            <Image
+              src={"/close_icon.svg"}
+              height={15}
+              width={15}
+              alt="close"
+              onClick={() => setClose(true)}
+            />
             more login options coming soon...
-            {/* <Image src={"/close_icon.svg"} height={15} width={15} alt="close" /> */}
           </p>
         </main>
       </Suspense>

@@ -1,0 +1,63 @@
+* {
+  /* box-shadow: inset 0 0 1px 0 #000; */
+}
+.leadWrapper {
+  padding: 50px;
+}
+.leadContainer {
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 10px 10px;
+  padding-inline: 30px;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+.leadContainer h1 {
+  font-size: 24px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+.name,
+.score {
+  margin: 0;
+}
+.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.score {
+  font-size: 70px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.score > span {
+  font-size: 14px;
+}
+
+.leadContainer:nth-child(1) {
+  height: 6rem;
+  border: 2px solid #fff;
+  background: linear-gradient(45deg, #ff9b9b, #ffcf96, #a1eebd, #7bd3ea);
+  /* background-clip: text; */
+  /* color: transparent; */
+  filter: invert(1);
+}
+.leadContainer:nth-child(2) {
+  background: #7bd3ea;
+}
+.leadContainer:nth-child(3) {
+  background: #a1eebd;
+}
+.leadContainer:nth-child(4) {
+  background: #ffcf96;
+}
+.leadContainer:nth-child(5) {
+  background: #ff9b9b;
+}
+.leadContainer:first-child > .name {
+  font-size: 30px;
+}
